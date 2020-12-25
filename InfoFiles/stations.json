@@ -1,0 +1,3022 @@
+{
+    "Alamein": {
+        "disruption_ids": [],
+        "stop_suburb": "Ashburton",
+        "stop_name": "Alamein Station",
+        "stop_id": 1002,
+        "route_type": 0,
+        "stop_latitude": -37.8683167,
+        "stop_longitude": 145.079666,
+        "stop_sequence": 0,
+        "routes": [
+            1
+        ]
+    },
+    "Ashburton": {
+        "disruption_ids": [],
+        "stop_suburb": "Ashburton",
+        "stop_name": "Ashburton Station",
+        "stop_id": 1010,
+        "route_type": 0,
+        "stop_latitude": -37.86197,
+        "stop_longitude": 145.081345,
+        "stop_sequence": 0,
+        "routes": [
+            1
+        ]
+    },
+    "Auburn": {
+        "disruption_ids": [],
+        "stop_suburb": "Hawthorn East",
+        "stop_name": "Auburn Station",
+        "stop_id": 1012,
+        "route_type": 0,
+        "stop_latitude": -37.8224,
+        "stop_longitude": 145.045837,
+        "stop_sequence": 0,
+        "routes": [
+            1,
+            2,
+            9
+        ]
+    },
+    "Burnley": {
+        "disruption_ids": [],
+        "stop_suburb": "Burnley",
+        "stop_name": "Burnley Station",
+        "stop_id": 1030,
+        "route_type": 0,
+        "stop_latitude": -37.8275566,
+        "stop_longitude": 145.007553,
+        "stop_sequence": 0,
+        "routes": [
+            1,
+            2,
+            7,
+            9
+        ]
+    },
+    "Burwood": {
+        "disruption_ids": [],
+        "stop_suburb": "Glen Iris",
+        "stop_name": "Burwood Station",
+        "stop_id": 1031,
+        "route_type": 0,
+        "stop_latitude": -37.8515625,
+        "stop_longitude": 145.0805,
+        "stop_sequence": 0,
+        "routes": [
+            1
+        ]
+    },
+    "Camberwell": {
+        "disruption_ids": [],
+        "stop_suburb": "Camberwell",
+        "stop_name": "Camberwell Station",
+        "stop_id": 1032,
+        "route_type": 0,
+        "stop_latitude": -37.8265648,
+        "stop_longitude": 145.058685,
+        "stop_sequence": 0,
+        "routes": [
+            1,
+            2,
+            9
+        ]
+    },
+    "East Richmond": {
+        "disruption_ids": [],
+        "stop_suburb": "Richmond",
+        "stop_name": "East Richmond Station",
+        "stop_id": 1059,
+        "route_type": 0,
+        "stop_latitude": -37.8264046,
+        "stop_longitude": 144.99707,
+        "stop_sequence": 0,
+        "routes": [
+            1,
+            2,
+            7,
+            9
+        ]
+    },
+    "Flagstaff": {
+        "disruption_ids": [],
+        "stop_suburb": "Melbourne City",
+        "stop_name": "Flagstaff Station",
+        "stop_id": 1068,
+        "route_type": 0,
+        "stop_latitude": -37.8119774,
+        "stop_longitude": 144.955658,
+        "stop_sequence": 0,
+        "routes": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            11,
+            12,
+            14,
+            15,
+            16,
+            17
+        ]
+    },
+    "Flinders Street": {
+        "disruption_ids": [],
+        "stop_suburb": "Melbourne City",
+        "stop_name": "Flinders Street Station",
+        "stop_id": 1071,
+        "route_type": 0,
+        "stop_latitude": -37.81831,
+        "stop_longitude": 144.966965,
+        "stop_sequence": 0,
+        "routes": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            11,
+            12,
+            14,
+            15,
+            16,
+            17
+        ]
+    },
+    "Glenferrie": {
+        "disruption_ids": [],
+        "stop_suburb": "Hawthorn",
+        "stop_name": "Glenferrie Station",
+        "stop_id": 1080,
+        "route_type": 0,
+        "stop_latitude": -37.8214645,
+        "stop_longitude": 145.036438,
+        "stop_sequence": 0,
+        "routes": [
+            1,
+            2,
+            9
+        ]
+    },
+    "Hartwell": {
+        "disruption_ids": [],
+        "stop_suburb": "Camberwell",
+        "stop_name": "Hartwell Station",
+        "stop_id": 1087,
+        "route_type": 0,
+        "stop_latitude": -37.8439827,
+        "stop_longitude": 145.075562,
+        "stop_sequence": 0,
+        "routes": [
+            1
+        ]
+    },
+    "Hawthorn": {
+        "disruption_ids": [],
+        "stop_suburb": "Hawthorn",
+        "stop_name": "Hawthorn Station",
+        "stop_id": 1090,
+        "route_type": 0,
+        "stop_latitude": -37.8218231,
+        "stop_longitude": 145.0229,
+        "stop_sequence": 0,
+        "routes": [
+            1,
+            2,
+            9
+        ]
+    },
+    "Melbourne Central": {
+        "disruption_ids": [],
+        "stop_suburb": "Melbourne City",
+        "stop_name": "Melbourne Central Station",
+        "stop_id": 1120,
+        "route_type": 0,
+        "stop_latitude": -37.8099365,
+        "stop_longitude": 144.9626,
+        "stop_sequence": 0,
+        "routes": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            11,
+            12,
+            14,
+            15,
+            16,
+            17
+        ]
+    },
+    "Parliament": {
+        "disruption_ids": [],
+        "stop_suburb": "Melbourne City",
+        "stop_name": "Parliament Station",
+        "stop_id": 1155,
+        "route_type": 0,
+        "stop_latitude": -37.8110542,
+        "stop_longitude": 144.9729,
+        "stop_sequence": 0,
+        "routes": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            11,
+            12,
+            14,
+            15,
+            16,
+            17
+        ]
+    },
+    "Richmond": {
+        "disruption_ids": [],
+        "stop_suburb": "Richmond",
+        "stop_name": "Richmond Station",
+        "stop_id": 1162,
+        "route_type": 0,
+        "stop_latitude": -37.8240738,
+        "stop_longitude": 144.990158,
+        "stop_sequence": 0,
+        "routes": [
+            1,
+            2,
+            4,
+            6,
+            7,
+            9,
+            11,
+            12
+        ]
+    },
+    "Riversdale": {
+        "disruption_ids": [],
+        "stop_suburb": "Camberwell",
+        "stop_name": "Riversdale Station",
+        "stop_id": 1166,
+        "route_type": 0,
+        "stop_latitude": -37.8315,
+        "stop_longitude": 145.069641,
+        "stop_sequence": 0,
+        "routes": [
+            1
+        ]
+    },
+    "Southern Cross": {
+        "disruption_ids": [],
+        "stop_suburb": "Melbourne City",
+        "stop_name": "Southern Cross Station",
+        "stop_id": 1181,
+        "route_type": 0,
+        "stop_latitude": -37.8183327,
+        "stop_longitude": 144.95253,
+        "stop_sequence": 0,
+        "routes": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            11,
+            12,
+            14,
+            15,
+            16,
+            17
+        ]
+    },
+    "Willison": {
+        "disruption_ids": [],
+        "stop_suburb": "Camberwell",
+        "stop_name": "Willison Station",
+        "stop_id": 1213,
+        "route_type": 0,
+        "stop_latitude": -37.8357124,
+        "stop_longitude": 145.0703,
+        "stop_sequence": 0,
+        "routes": [
+            1
+        ]
+    },
+    "Bayswater": {
+        "disruption_ids": [],
+        "stop_suburb": "Bayswater",
+        "stop_name": "Bayswater Station",
+        "stop_id": 1016,
+        "route_type": 0,
+        "stop_latitude": -37.84173,
+        "stop_longitude": 145.268143,
+        "stop_sequence": 0,
+        "routes": [
+            2
+        ]
+    },
+    "Belgrave": {
+        "disruption_ids": [],
+        "stop_suburb": "Belgrave",
+        "stop_name": "Belgrave Station",
+        "stop_id": 1018,
+        "route_type": 0,
+        "stop_latitude": -37.9091,
+        "stop_longitude": 145.355286,
+        "stop_sequence": 0,
+        "routes": [
+            2
+        ]
+    },
+    "Blackburn": {
+        "disruption_ids": [],
+        "stop_suburb": "Blackburn",
+        "stop_name": "Blackburn Station",
+        "stop_id": 1023,
+        "route_type": 0,
+        "stop_latitude": -37.82007,
+        "stop_longitude": 145.150009,
+        "stop_sequence": 0,
+        "routes": [
+            2,
+            9
+        ]
+    },
+    "Boronia": {
+        "disruption_ids": [],
+        "stop_suburb": "Boronia",
+        "stop_name": "Boronia Station",
+        "stop_id": 1025,
+        "route_type": 0,
+        "stop_latitude": -37.8604546,
+        "stop_longitude": 145.284378,
+        "stop_sequence": 0,
+        "routes": [
+            2
+        ]
+    },
+    "Box Hill": {
+        "disruption_ids": [],
+        "stop_suburb": "Box Hill",
+        "stop_name": "Box Hill Station",
+        "stop_id": 1026,
+        "route_type": 0,
+        "stop_latitude": -37.8192177,
+        "stop_longitude": 145.121429,
+        "stop_sequence": 0,
+        "routes": [
+            2,
+            9
+        ]
+    },
+    "Canterbury": {
+        "disruption_ids": [],
+        "stop_suburb": "Canterbury",
+        "stop_name": "Canterbury Station",
+        "stop_id": 1033,
+        "route_type": 0,
+        "stop_latitude": -37.82449,
+        "stop_longitude": 145.081223,
+        "stop_sequence": 0,
+        "routes": [
+            2,
+            9
+        ]
+    },
+    "Chatham": {
+        "disruption_ids": [],
+        "stop_suburb": "Surrey Hills",
+        "stop_name": "Chatham Station",
+        "stop_id": 1037,
+        "route_type": 0,
+        "stop_latitude": -37.8243027,
+        "stop_longitude": 145.088654,
+        "stop_sequence": 0,
+        "routes": [
+            2,
+            9
+        ]
+    },
+    "East Camberwell": {
+        "disruption_ids": [],
+        "stop_suburb": "Camberwell",
+        "stop_name": "East Camberwell Station",
+        "stop_id": 1057,
+        "route_type": 0,
+        "stop_latitude": -37.8258934,
+        "stop_longitude": 145.068192,
+        "stop_sequence": 0,
+        "routes": [
+            2,
+            9
+        ]
+    },
+    "Ferntree Gully": {
+        "disruption_ids": [],
+        "stop_suburb": "Ferntree Gully",
+        "stop_name": "Ferntree Gully Station",
+        "stop_id": 1067,
+        "route_type": 0,
+        "stop_latitude": -37.8817,
+        "stop_longitude": 145.295258,
+        "stop_sequence": 0,
+        "routes": [
+            2
+        ]
+    },
+    "Heatherdale": {
+        "disruption_ids": [],
+        "stop_suburb": "Ringwood",
+        "stop_name": "Heatherdale Station",
+        "stop_id": 1091,
+        "route_type": 0,
+        "stop_latitude": -37.81884,
+        "stop_longitude": 145.213547,
+        "stop_sequence": 0,
+        "routes": [
+            2,
+            9
+        ]
+    },
+    "Heathmont": {
+        "disruption_ids": [],
+        "stop_suburb": "Heathmont",
+        "stop_name": "Heathmont Station",
+        "stop_id": 1092,
+        "route_type": 0,
+        "stop_latitude": -37.82832,
+        "stop_longitude": 145.244553,
+        "stop_sequence": 0,
+        "routes": [
+            2
+        ]
+    },
+    "Laburnum": {
+        "disruption_ids": [],
+        "stop_suburb": "Blackburn",
+        "stop_name": "Laburnum Station",
+        "stop_id": 1111,
+        "route_type": 0,
+        "stop_latitude": -37.8207779,
+        "stop_longitude": 145.1407,
+        "stop_sequence": 0,
+        "routes": [
+            2,
+            9
+        ]
+    },
+    "Mitcham": {
+        "disruption_ids": [],
+        "stop_suburb": "Mitcham",
+        "stop_name": "Mitcham Station",
+        "stop_id": 1128,
+        "route_type": 0,
+        "stop_latitude": -37.8180122,
+        "stop_longitude": 145.191971,
+        "stop_sequence": 0,
+        "routes": [
+            2,
+            9
+        ]
+    },
+    "Mont Albert": {
+        "disruption_ids": [],
+        "stop_suburb": "Mont Albert",
+        "stop_name": "Mont Albert Station",
+        "stop_id": 1129,
+        "route_type": 0,
+        "stop_latitude": -37.8194275,
+        "stop_longitude": 145.10553,
+        "stop_sequence": 0,
+        "routes": [
+            2,
+            9
+        ]
+    },
+    "Nunawading": {
+        "disruption_ids": [],
+        "stop_suburb": "Nunawading",
+        "stop_name": "Nunawading Station",
+        "stop_id": 1148,
+        "route_type": 0,
+        "stop_latitude": -37.8206,
+        "stop_longitude": 145.1749,
+        "stop_sequence": 0,
+        "routes": [
+            2,
+            9
+        ]
+    },
+    "Ringwood": {
+        "disruption_ids": [],
+        "stop_suburb": "Ringwood",
+        "stop_name": "Ringwood Station",
+        "stop_id": 1163,
+        "route_type": 0,
+        "stop_latitude": -37.81589,
+        "stop_longitude": 145.228973,
+        "stop_sequence": 0,
+        "routes": [
+            2,
+            9
+        ]
+    },
+    "Surrey Hills": {
+        "disruption_ids": [],
+        "stop_suburb": "Surrey Hills",
+        "stop_name": "Surrey Hills Station",
+        "stop_id": 1189,
+        "route_type": 0,
+        "stop_latitude": -37.8241425,
+        "stop_longitude": 145.098785,
+        "stop_sequence": 0,
+        "routes": [
+            2,
+            9
+        ]
+    },
+    "Tecoma": {
+        "disruption_ids": [],
+        "stop_suburb": "Tecoma",
+        "stop_name": "Tecoma Station",
+        "stop_id": 1191,
+        "route_type": 0,
+        "stop_latitude": -37.9081154,
+        "stop_longitude": 145.343,
+        "stop_sequence": 0,
+        "routes": [
+            2
+        ]
+    },
+    "Upper Ferntree Gully": {
+        "disruption_ids": [],
+        "stop_suburb": "Upper Ferntree Gully",
+        "stop_name": "Upper Ferntree Gully Station",
+        "stop_id": 1199,
+        "route_type": 0,
+        "stop_latitude": -37.8926735,
+        "stop_longitude": 145.307526,
+        "stop_sequence": 0,
+        "routes": [
+            2
+        ]
+    },
+    "Upwey": {
+        "disruption_ids": [],
+        "stop_suburb": "Upwey",
+        "stop_name": "Upwey Station",
+        "stop_id": 1200,
+        "route_type": 0,
+        "stop_latitude": -37.90369,
+        "stop_longitude": 145.331329,
+        "stop_sequence": 0,
+        "routes": [
+            2
+        ]
+    },
+    "Ascot Vale": {
+        "disruption_ids": [],
+        "stop_suburb": "Ascot Vale",
+        "stop_name": "Ascot Vale Station",
+        "stop_id": 1009,
+        "route_type": 0,
+        "stop_latitude": -37.77531,
+        "stop_longitude": 144.921829,
+        "stop_sequence": 0,
+        "routes": [
+            3
+        ]
+    },
+    "Broadmeadows": {
+        "disruption_ids": [],
+        "stop_suburb": "Broadmeadows",
+        "stop_name": "Broadmeadows Station",
+        "stop_id": 1028,
+        "route_type": 0,
+        "stop_latitude": -37.6830521,
+        "stop_longitude": 144.919617,
+        "stop_sequence": 0,
+        "routes": [
+            3
+        ]
+    },
+    "Coolaroo": {
+        "disruption_ids": [],
+        "stop_suburb": "Coolaroo",
+        "stop_name": "Coolaroo Station",
+        "stop_id": 1221,
+        "route_type": 0,
+        "stop_latitude": -37.661,
+        "stop_longitude": 144.926056,
+        "stop_sequence": 0,
+        "routes": [
+            3
+        ]
+    },
+    "Craigieburn": {
+        "disruption_ids": [],
+        "stop_suburb": "Craigieburn",
+        "stop_name": "Craigieburn Station",
+        "stop_id": 1044,
+        "route_type": 0,
+        "stop_latitude": -37.6019249,
+        "stop_longitude": 144.943314,
+        "stop_sequence": 0,
+        "routes": [
+            3
+        ]
+    },
+    "Essendon": {
+        "disruption_ids": [],
+        "stop_suburb": "Essendon",
+        "stop_name": "Essendon Station",
+        "stop_id": 1064,
+        "route_type": 0,
+        "stop_latitude": -37.75601,
+        "stop_longitude": 144.9162,
+        "stop_sequence": 0,
+        "routes": [
+            3
+        ]
+    },
+    "Glenbervie": {
+        "disruption_ids": [],
+        "stop_suburb": "Essendon",
+        "stop_name": "Glenbervie Station",
+        "stop_id": 1079,
+        "route_type": 0,
+        "stop_latitude": -37.7472153,
+        "stop_longitude": 144.920944,
+        "stop_sequence": 0,
+        "routes": [
+            3
+        ]
+    },
+    "Glenroy": {
+        "disruption_ids": [],
+        "stop_suburb": "Glenroy",
+        "stop_name": "Glenroy Station",
+        "stop_id": 1082,
+        "route_type": 0,
+        "stop_latitude": -37.7045326,
+        "stop_longitude": 144.917221,
+        "stop_sequence": 0,
+        "routes": [
+            3
+        ]
+    },
+    "Jacana": {
+        "disruption_ids": [],
+        "stop_suburb": "Glenroy",
+        "stop_name": "Jacana Station",
+        "stop_id": 1102,
+        "route_type": 0,
+        "stop_latitude": -37.6951332,
+        "stop_longitude": 144.915848,
+        "stop_sequence": 0,
+        "routes": [
+            3
+        ]
+    },
+    "Kensington": {
+        "disruption_ids": [],
+        "stop_suburb": "Kensington",
+        "stop_name": "Kensington Station",
+        "stop_id": 1108,
+        "route_type": 0,
+        "stop_latitude": -37.7937775,
+        "stop_longitude": 144.930527,
+        "stop_sequence": 0,
+        "routes": [
+            3
+        ]
+    },
+    "Moonee Ponds": {
+        "disruption_ids": [],
+        "stop_suburb": "Moonee Ponds",
+        "stop_name": "Moonee Ponds Station",
+        "stop_id": 1131,
+        "route_type": 0,
+        "stop_latitude": -37.7657051,
+        "stop_longitude": 144.919159,
+        "stop_sequence": 0,
+        "routes": [
+            3
+        ]
+    },
+    "Newmarket": {
+        "disruption_ids": [],
+        "stop_suburb": "Flemington",
+        "stop_name": "Newmarket Station",
+        "stop_id": 1140,
+        "route_type": 0,
+        "stop_latitude": -37.7873268,
+        "stop_longitude": 144.928986,
+        "stop_sequence": 0,
+        "routes": [
+            3
+        ]
+    },
+    "North Melbourne": {
+        "disruption_ids": [],
+        "stop_suburb": "West Melbourne",
+        "stop_name": "North Melbourne Station",
+        "stop_id": 1144,
+        "route_type": 0,
+        "stop_latitude": -37.80631,
+        "stop_longitude": 144.941513,
+        "stop_sequence": 0,
+        "routes": [
+            3,
+            14,
+            15,
+            16,
+            17
+        ]
+    },
+    "Oak Park": {
+        "disruption_ids": [],
+        "stop_suburb": "Oak Park",
+        "stop_name": "Oak Park Station",
+        "stop_id": 1149,
+        "route_type": 0,
+        "stop_latitude": -37.71795,
+        "stop_longitude": 144.921509,
+        "stop_sequence": 0,
+        "routes": [
+            3
+        ]
+    },
+    "Pascoe Vale": {
+        "disruption_ids": [],
+        "stop_suburb": "Pascoe Vale",
+        "stop_name": "Pascoe Vale Station",
+        "stop_id": 1156,
+        "route_type": 0,
+        "stop_latitude": -37.7307549,
+        "stop_longitude": 144.928192,
+        "stop_sequence": 0,
+        "routes": [
+            3
+        ]
+    },
+    "Roxburgh Park": {
+        "disruption_ids": [],
+        "stop_suburb": "Roxburgh Park",
+        "stop_name": "Roxburgh Park Station",
+        "stop_id": 1219,
+        "route_type": 0,
+        "stop_latitude": -37.6382332,
+        "stop_longitude": 144.93541,
+        "stop_sequence": 0,
+        "routes": [
+            3
+        ]
+    },
+    "Strathmore": {
+        "disruption_ids": [],
+        "stop_suburb": "Strathmore",
+        "stop_name": "Strathmore Station",
+        "stop_id": 1186,
+        "route_type": 0,
+        "stop_latitude": -37.74359,
+        "stop_longitude": 144.927322,
+        "stop_sequence": 0,
+        "routes": [
+            3
+        ]
+    },
+    "Armadale": {
+        "disruption_ids": [],
+        "stop_suburb": "Armadale",
+        "stop_name": "Armadale Station",
+        "stop_id": 1008,
+        "route_type": 0,
+        "stop_latitude": -37.8564529,
+        "stop_longitude": 145.019333,
+        "stop_sequence": 0,
+        "routes": [
+            4,
+            6,
+            11
+        ]
+    },
+    "Carnegie": {
+        "disruption_ids": [],
+        "stop_suburb": "Carnegie",
+        "stop_name": "Carnegie Station",
+        "stop_id": 1034,
+        "route_type": 0,
+        "stop_latitude": -37.88624,
+        "stop_longitude": 145.058578,
+        "stop_sequence": 0,
+        "routes": [
+            4,
+            11
+        ]
+    },
+    "Caulfield": {
+        "disruption_ids": [],
+        "stop_suburb": "Caulfield East",
+        "stop_name": "Caulfield Station",
+        "stop_id": 1036,
+        "route_type": 0,
+        "stop_latitude": -37.8774567,
+        "stop_longitude": 145.042526,
+        "stop_sequence": 0,
+        "routes": [
+            4,
+            6,
+            7,
+            11
+        ]
+    },
+    "Clayton": {
+        "disruption_ids": [],
+        "stop_suburb": "Clayton",
+        "stop_name": "Clayton Station",
+        "stop_id": 1040,
+        "route_type": 0,
+        "stop_latitude": -37.9251671,
+        "stop_longitude": 145.120682,
+        "stop_sequence": 0,
+        "routes": [
+            4,
+            11
+        ]
+    },
+    "Cranbourne": {
+        "disruption_ids": [],
+        "stop_suburb": "Cranbourne",
+        "stop_name": "Cranbourne Station",
+        "stop_id": 1045,
+        "route_type": 0,
+        "stop_latitude": -38.09954,
+        "stop_longitude": 145.2806,
+        "stop_sequence": 0,
+        "routes": [
+            4
+        ]
+    },
+    "Dandenong": {
+        "disruption_ids": [],
+        "stop_suburb": "Dandenong",
+        "stop_name": "Dandenong Station",
+        "stop_id": 1049,
+        "route_type": 0,
+        "stop_latitude": -37.9899673,
+        "stop_longitude": 145.209732,
+        "stop_sequence": 0,
+        "routes": [
+            4,
+            11
+        ]
+    },
+    "Hawksburn": {
+        "disruption_ids": [],
+        "stop_suburb": "South Yarra",
+        "stop_name": "Hawksburn Station",
+        "stop_id": 1089,
+        "route_type": 0,
+        "stop_latitude": -37.844593,
+        "stop_longitude": 145.002136,
+        "stop_sequence": 0,
+        "routes": [
+            4,
+            6,
+            11
+        ]
+    },
+    "Hughesdale": {
+        "disruption_ids": [],
+        "stop_suburb": "Hughesdale",
+        "stop_name": "Hughesdale Station",
+        "stop_id": 1098,
+        "route_type": 0,
+        "stop_latitude": -37.89488,
+        "stop_longitude": 145.077637,
+        "stop_sequence": 0,
+        "routes": [
+            4,
+            11
+        ]
+    },
+    "Huntingdale": {
+        "disruption_ids": [],
+        "stop_suburb": "Oakleigh",
+        "stop_name": "Huntingdale Station",
+        "stop_id": 1099,
+        "route_type": 0,
+        "stop_latitude": -37.91102,
+        "stop_longitude": 145.102371,
+        "stop_sequence": 0,
+        "routes": [
+            4,
+            11
+        ]
+    },
+    "Lynbrook": {
+        "disruption_ids": [],
+        "stop_suburb": "Lynbrook",
+        "stop_name": "Lynbrook Station",
+        "stop_id": 1222,
+        "route_type": 0,
+        "stop_latitude": -38.0573463,
+        "stop_longitude": 145.249283,
+        "stop_sequence": 0,
+        "routes": [
+            4
+        ]
+    },
+    "Malvern": {
+        "disruption_ids": [],
+        "stop_suburb": "Malvern",
+        "stop_name": "Malvern Station",
+        "stop_id": 1118,
+        "route_type": 0,
+        "stop_latitude": -37.86625,
+        "stop_longitude": 145.0293,
+        "stop_sequence": 0,
+        "routes": [
+            4,
+            6,
+            11
+        ]
+    },
+    "Merinda Park": {
+        "disruption_ids": [],
+        "stop_suburb": "Cranbourne North",
+        "stop_name": "Merinda Park Station",
+        "stop_id": 1123,
+        "route_type": 0,
+        "stop_latitude": -38.0790024,
+        "stop_longitude": 145.2635,
+        "stop_sequence": 0,
+        "routes": [
+            4
+        ]
+    },
+    "Murrumbeena": {
+        "disruption_ids": [],
+        "stop_suburb": "Murrumbeena",
+        "stop_name": "Murrumbeena Station",
+        "stop_id": 1138,
+        "route_type": 0,
+        "stop_latitude": -37.8901978,
+        "stop_longitude": 145.067383,
+        "stop_sequence": 0,
+        "routes": [
+            4,
+            11
+        ]
+    },
+    "Noble Park": {
+        "disruption_ids": [],
+        "stop_suburb": "Noble Park",
+        "stop_name": "Noble Park Station",
+        "stop_id": 1142,
+        "route_type": 0,
+        "stop_latitude": -37.9672356,
+        "stop_longitude": 145.176941,
+        "stop_sequence": 0,
+        "routes": [
+            4,
+            11
+        ]
+    },
+    "Oakleigh": {
+        "disruption_ids": [],
+        "stop_suburb": "Oakleigh",
+        "stop_name": "Oakleigh Station",
+        "stop_id": 1150,
+        "route_type": 0,
+        "stop_latitude": -37.9003677,
+        "stop_longitude": 145.088318,
+        "stop_sequence": 0,
+        "routes": [
+            4,
+            11
+        ]
+    },
+    "Sandown Park": {
+        "disruption_ids": [],
+        "stop_suburb": "Springvale",
+        "stop_name": "Sandown Park Station",
+        "stop_id": 1172,
+        "route_type": 0,
+        "stop_latitude": -37.9565,
+        "stop_longitude": 145.162827,
+        "stop_sequence": 0,
+        "routes": [
+            4,
+            11
+        ]
+    },
+    "South Yarra": {
+        "disruption_ids": [],
+        "stop_suburb": "South Yarra",
+        "stop_name": "South Yarra Station",
+        "stop_id": 1180,
+        "route_type": 0,
+        "stop_latitude": -37.8384438,
+        "stop_longitude": 144.99234,
+        "stop_sequence": 0,
+        "routes": [
+            4,
+            6,
+            11,
+            12
+        ]
+    },
+    "Springvale": {
+        "disruption_ids": [],
+        "stop_suburb": "Springvale",
+        "stop_name": "Springvale Station",
+        "stop_id": 1183,
+        "route_type": 0,
+        "stop_latitude": -37.9495125,
+        "stop_longitude": 145.153458,
+        "stop_sequence": 0,
+        "routes": [
+            4,
+            11
+        ]
+    },
+    "Toorak": {
+        "disruption_ids": [],
+        "stop_suburb": "Armadale",
+        "stop_name": "Toorak Station",
+        "stop_id": 1194,
+        "route_type": 0,
+        "stop_latitude": -37.85077,
+        "stop_longitude": 145.0139,
+        "stop_sequence": 0,
+        "routes": [
+            4,
+            6,
+            11
+        ]
+    },
+    "Westall": {
+        "disruption_ids": [],
+        "stop_suburb": "Clayton South",
+        "stop_name": "Westall Station",
+        "stop_id": 1208,
+        "route_type": 0,
+        "stop_latitude": -37.93849,
+        "stop_longitude": 145.13884,
+        "stop_sequence": 0,
+        "routes": [
+            4,
+            11
+        ]
+    },
+    "Yarraman": {
+        "disruption_ids": [],
+        "stop_suburb": "Noble Park",
+        "stop_name": "Yarraman Station",
+        "stop_id": 1215,
+        "route_type": 0,
+        "stop_latitude": -37.9782524,
+        "stop_longitude": 145.1916,
+        "stop_sequence": 0,
+        "routes": [
+            4,
+            11
+        ]
+    },
+    "Bell": {
+        "disruption_ids": [],
+        "stop_suburb": "Preston",
+        "stop_name": "Bell Station",
+        "stop_id": 1019,
+        "route_type": 0,
+        "stop_latitude": -37.7455673,
+        "stop_longitude": 145.000153,
+        "stop_sequence": 0,
+        "routes": [
+            5
+        ]
+    },
+    "Clifton Hill": {
+        "disruption_ids": [],
+        "stop_suburb": "Clifton Hill",
+        "stop_name": "Clifton Hill Station",
+        "stop_id": 1041,
+        "route_type": 0,
+        "stop_latitude": -37.7886543,
+        "stop_longitude": 144.995422,
+        "stop_sequence": 0,
+        "routes": [
+            5,
+            8
+        ]
+    },
+    "Collingwood": {
+        "disruption_ids": [],
+        "stop_suburb": "Abbotsford",
+        "stop_name": "Collingwood Station",
+        "stop_id": 1043,
+        "route_type": 0,
+        "stop_latitude": -37.8045235,
+        "stop_longitude": 144.993744,
+        "stop_sequence": 0,
+        "routes": [
+            5,
+            8
+        ]
+    },
+    "Croxton": {
+        "disruption_ids": [],
+        "stop_suburb": "Northcote",
+        "stop_name": "Croxton Station",
+        "stop_id": 1047,
+        "route_type": 0,
+        "stop_latitude": -37.7641,
+        "stop_longitude": 144.997055,
+        "stop_sequence": 0,
+        "routes": [
+            5
+        ]
+    },
+    "Epping": {
+        "disruption_ids": [],
+        "stop_suburb": "Epping",
+        "stop_name": "Epping Station",
+        "stop_id": 1063,
+        "route_type": 0,
+        "stop_latitude": -37.65239,
+        "stop_longitude": 145.030121,
+        "stop_sequence": 0,
+        "routes": [
+            5
+        ]
+    },
+    "Hawkstowe": {
+        "disruption_ids": [],
+        "stop_suburb": "South Morang",
+        "stop_name": "Hawkstowe Station",
+        "stop_id": 1227,
+        "route_type": 0,
+        "stop_latitude": -37.6229935,
+        "stop_longitude": 145.0974,
+        "stop_sequence": 0,
+        "routes": [
+            5
+        ]
+    },
+    "Jolimont-MCG": {
+        "disruption_ids": [],
+        "stop_suburb": "East Melbourne",
+        "stop_name": "Jolimont-MCG Station",
+        "stop_id": 1104,
+        "route_type": 0,
+        "stop_latitude": -37.81653,
+        "stop_longitude": 144.9841,
+        "stop_sequence": 0,
+        "routes": [
+            5,
+            8
+        ]
+    },
+    "Keon Park": {
+        "disruption_ids": [],
+        "stop_suburb": "Thomastown",
+        "stop_name": "Keon Park Station",
+        "stop_id": 1109,
+        "route_type": 0,
+        "stop_latitude": -37.6948662,
+        "stop_longitude": 145.011887,
+        "stop_sequence": 0,
+        "routes": [
+            5
+        ]
+    },
+    "Lalor": {
+        "disruption_ids": [],
+        "stop_suburb": "Lalor",
+        "stop_name": "Lalor Station",
+        "stop_id": 1112,
+        "route_type": 0,
+        "stop_latitude": -37.66585,
+        "stop_longitude": 145.0172,
+        "stop_sequence": 0,
+        "routes": [
+            5
+        ]
+    },
+    "Mernda": {
+        "disruption_ids": [],
+        "stop_suburb": "Mernda",
+        "stop_name": "Mernda Station",
+        "stop_id": 1228,
+        "route_type": 0,
+        "stop_latitude": -37.60255,
+        "stop_longitude": 145.100876,
+        "stop_sequence": 0,
+        "routes": [
+            5
+        ]
+    },
+    "Merri": {
+        "disruption_ids": [],
+        "stop_suburb": "Northcote",
+        "stop_name": "Merri Station",
+        "stop_id": 1125,
+        "route_type": 0,
+        "stop_latitude": -37.7778435,
+        "stop_longitude": 144.992981,
+        "stop_sequence": 0,
+        "routes": [
+            5
+        ]
+    },
+    "Middle Gorge": {
+        "disruption_ids": [],
+        "stop_suburb": "South Morang",
+        "stop_name": "Middle Gorge Station",
+        "stop_id": 1226,
+        "route_type": 0,
+        "stop_latitude": -37.644062,
+        "stop_longitude": 145.092133,
+        "stop_sequence": 0,
+        "routes": [
+            5
+        ]
+    },
+    "North Richmond": {
+        "disruption_ids": [],
+        "stop_suburb": "Richmond",
+        "stop_name": "North Richmond Station",
+        "stop_id": 1145,
+        "route_type": 0,
+        "stop_latitude": -37.8103943,
+        "stop_longitude": 144.9925,
+        "stop_sequence": 0,
+        "routes": [
+            5,
+            8
+        ]
+    },
+    "Northcote": {
+        "disruption_ids": [],
+        "stop_suburb": "Northcote",
+        "stop_name": "Northcote Station",
+        "stop_id": 1147,
+        "route_type": 0,
+        "stop_latitude": -37.7698631,
+        "stop_longitude": 144.995285,
+        "stop_sequence": 0,
+        "routes": [
+            5
+        ]
+    },
+    "Preston": {
+        "disruption_ids": [],
+        "stop_suburb": "Preston",
+        "stop_name": "Preston Station",
+        "stop_id": 1159,
+        "route_type": 0,
+        "stop_latitude": -37.7386742,
+        "stop_longitude": 145.000534,
+        "stop_sequence": 0,
+        "routes": [
+            5
+        ]
+    },
+    "Regent": {
+        "disruption_ids": [],
+        "stop_suburb": "Reservoir",
+        "stop_name": "Regent Station",
+        "stop_id": 1160,
+        "route_type": 0,
+        "stop_latitude": -37.7284,
+        "stop_longitude": 145.002777,
+        "stop_sequence": 0,
+        "routes": [
+            5
+        ]
+    },
+    "Reservoir": {
+        "disruption_ids": [],
+        "stop_suburb": "Reservoir",
+        "stop_name": "Reservoir Station",
+        "stop_id": 1161,
+        "route_type": 0,
+        "stop_latitude": -37.71689,
+        "stop_longitude": 145.006989,
+        "stop_sequence": 0,
+        "routes": [
+            5
+        ]
+    },
+    "Rushall": {
+        "disruption_ids": [],
+        "stop_suburb": "Fitzroy North",
+        "stop_name": "Rushall Station",
+        "stop_id": 1170,
+        "route_type": 0,
+        "stop_latitude": -37.78322,
+        "stop_longitude": 144.9924,
+        "stop_sequence": 0,
+        "routes": [
+            5
+        ]
+    },
+    "Ruthven": {
+        "disruption_ids": [],
+        "stop_suburb": "Reservoir",
+        "stop_name": "Ruthven Station",
+        "stop_id": 1171,
+        "route_type": 0,
+        "stop_latitude": -37.7078972,
+        "stop_longitude": 145.009521,
+        "stop_sequence": 0,
+        "routes": [
+            5
+        ]
+    },
+    "South Morang": {
+        "disruption_ids": [],
+        "stop_suburb": "South Morang",
+        "stop_name": "South Morang Station",
+        "stop_id": 1224,
+        "route_type": 0,
+        "stop_latitude": -37.6491623,
+        "stop_longitude": 145.067032,
+        "stop_sequence": 0,
+        "routes": [
+            5
+        ]
+    },
+    "Thomastown": {
+        "disruption_ids": [],
+        "stop_suburb": "Thomastown",
+        "stop_name": "Thomastown Station",
+        "stop_id": 1192,
+        "route_type": 0,
+        "stop_latitude": -37.680336,
+        "stop_longitude": 145.014282,
+        "stop_sequence": 0,
+        "routes": [
+            5
+        ]
+    },
+    "Thornbury": {
+        "disruption_ids": [],
+        "stop_suburb": "Thornbury",
+        "stop_name": "Thornbury Station",
+        "stop_id": 1193,
+        "route_type": 0,
+        "stop_latitude": -37.7550468,
+        "stop_longitude": 144.998581,
+        "stop_sequence": 0,
+        "routes": [
+            5
+        ]
+    },
+    "Victoria Park": {
+        "disruption_ids": [],
+        "stop_suburb": "Abbotsford",
+        "stop_name": "Victoria Park Station",
+        "stop_id": 1201,
+        "route_type": 0,
+        "stop_latitude": -37.7991562,
+        "stop_longitude": 144.994446,
+        "stop_sequence": 0,
+        "routes": [
+            5,
+            8
+        ]
+    },
+    "West Richmond": {
+        "disruption_ids": [],
+        "stop_suburb": "Richmond",
+        "stop_name": "West Richmond Station",
+        "stop_id": 1207,
+        "route_type": 0,
+        "stop_latitude": -37.8149452,
+        "stop_longitude": 144.991425,
+        "stop_sequence": 0,
+        "routes": [
+            5,
+            8
+        ]
+    },
+    "Aspendale": {
+        "disruption_ids": [],
+        "stop_suburb": "Aspendale",
+        "stop_name": "Aspendale Station",
+        "stop_id": 1011,
+        "route_type": 0,
+        "stop_latitude": -38.02722,
+        "stop_longitude": 145.102158,
+        "stop_sequence": 0,
+        "routes": [
+            6
+        ]
+    },
+    "Bentleigh": {
+        "disruption_ids": [],
+        "stop_suburb": "Bentleigh",
+        "stop_name": "Bentleigh Station",
+        "stop_id": 1020,
+        "route_type": 0,
+        "stop_latitude": -37.9174271,
+        "stop_longitude": 145.036987,
+        "stop_sequence": 0,
+        "routes": [
+            6
+        ]
+    },
+    "Bonbeach": {
+        "disruption_ids": [],
+        "stop_suburb": "Bonbeach",
+        "stop_name": "Bonbeach Station",
+        "stop_id": 1024,
+        "route_type": 0,
+        "stop_latitude": -38.0629463,
+        "stop_longitude": 145.119675,
+        "stop_sequence": 0,
+        "routes": [
+            6
+        ]
+    },
+    "Carrum": {
+        "disruption_ids": [],
+        "stop_suburb": "Carrum",
+        "stop_name": "Carrum Station",
+        "stop_id": 1035,
+        "route_type": 0,
+        "stop_latitude": -38.0748978,
+        "stop_longitude": 145.122421,
+        "stop_sequence": 0,
+        "routes": [
+            6
+        ]
+    },
+    "Chelsea": {
+        "disruption_ids": [],
+        "stop_suburb": "Chelsea",
+        "stop_name": "Chelsea Station",
+        "stop_id": 1038,
+        "route_type": 0,
+        "stop_latitude": -38.05196,
+        "stop_longitude": 145.116043,
+        "stop_sequence": 0,
+        "routes": [
+            6
+        ]
+    },
+    "Cheltenham": {
+        "disruption_ids": [],
+        "stop_suburb": "Cheltenham",
+        "stop_name": "Cheltenham Station",
+        "stop_id": 1039,
+        "route_type": 0,
+        "stop_latitude": -37.9666519,
+        "stop_longitude": 145.05455,
+        "stop_sequence": 0,
+        "routes": [
+            6
+        ]
+    },
+    "Edithvale": {
+        "disruption_ids": [],
+        "stop_suburb": "Edithvale",
+        "stop_name": "Edithvale Station",
+        "stop_id": 1060,
+        "route_type": 0,
+        "stop_latitude": -38.0380554,
+        "stop_longitude": 145.108536,
+        "stop_sequence": 0,
+        "routes": [
+            6
+        ]
+    },
+    "Frankston": {
+        "disruption_ids": [],
+        "stop_suburb": "Frankston",
+        "stop_name": "Frankston Station",
+        "stop_id": 1073,
+        "route_type": 0,
+        "stop_latitude": -38.1429863,
+        "stop_longitude": 145.12616,
+        "stop_sequence": 0,
+        "routes": [
+            6,
+            13
+        ]
+    },
+    "Glenhuntly": {
+        "disruption_ids": [],
+        "stop_suburb": "Glen Huntly",
+        "stop_name": "Glenhuntly Station",
+        "stop_id": 1081,
+        "route_type": 0,
+        "stop_latitude": -37.8897171,
+        "stop_longitude": 145.042221,
+        "stop_sequence": 0,
+        "routes": [
+            6
+        ]
+    },
+    "Highett": {
+        "disruption_ids": [],
+        "stop_suburb": "Highett",
+        "stop_name": "Highett Station",
+        "stop_id": 1095,
+        "route_type": 0,
+        "stop_latitude": -37.9484253,
+        "stop_longitude": 145.04187,
+        "stop_sequence": 0,
+        "routes": [
+            6
+        ]
+    },
+    "Kananook": {
+        "disruption_ids": [],
+        "stop_suburb": "Seaford",
+        "stop_name": "Kananook Station",
+        "stop_id": 1106,
+        "route_type": 0,
+        "stop_latitude": -38.12174,
+        "stop_longitude": 145.135284,
+        "stop_sequence": 0,
+        "routes": [
+            6
+        ]
+    },
+    "McKinnon": {
+        "disruption_ids": [],
+        "stop_suburb": "Mckinnon",
+        "stop_name": "McKinnon Station",
+        "stop_id": 1119,
+        "route_type": 0,
+        "stop_latitude": -37.910305,
+        "stop_longitude": 145.0383,
+        "stop_sequence": 0,
+        "routes": [
+            6
+        ]
+    },
+    "Mentone": {
+        "disruption_ids": [],
+        "stop_suburb": "Mentone",
+        "stop_name": "Mentone Station",
+        "stop_id": 1122,
+        "route_type": 0,
+        "stop_latitude": -37.9818649,
+        "stop_longitude": 145.06517,
+        "stop_sequence": 0,
+        "routes": [
+            6
+        ]
+    },
+    "Moorabbin": {
+        "disruption_ids": [],
+        "stop_suburb": "Moorabbin",
+        "stop_name": "Moorabbin Station",
+        "stop_id": 1132,
+        "route_type": 0,
+        "stop_latitude": -37.93435,
+        "stop_longitude": 145.036743,
+        "stop_sequence": 0,
+        "routes": [
+            6
+        ]
+    },
+    "Mordialloc": {
+        "disruption_ids": [],
+        "stop_suburb": "Mordialloc",
+        "stop_name": "Mordialloc Station",
+        "stop_id": 1134,
+        "route_type": 0,
+        "stop_latitude": -38.006588,
+        "stop_longitude": 145.087662,
+        "stop_sequence": 0,
+        "routes": [
+            6
+        ]
+    },
+    "Ormond": {
+        "disruption_ids": [],
+        "stop_suburb": "Ormond",
+        "stop_name": "Ormond Station",
+        "stop_id": 1152,
+        "route_type": 0,
+        "stop_latitude": -37.90321,
+        "stop_longitude": 145.039612,
+        "stop_sequence": 0,
+        "routes": [
+            6
+        ]
+    },
+    "Parkdale": {
+        "disruption_ids": [],
+        "stop_suburb": "Parkdale",
+        "stop_name": "Parkdale Station",
+        "stop_id": 1154,
+        "route_type": 0,
+        "stop_latitude": -37.9930763,
+        "stop_longitude": 145.076324,
+        "stop_sequence": 0,
+        "routes": [
+            6
+        ]
+    },
+    "Patterson": {
+        "disruption_ids": [],
+        "stop_suburb": "Bentleigh",
+        "stop_name": "Patterson Station",
+        "stop_id": 1157,
+        "route_type": 0,
+        "stop_latitude": -37.9251442,
+        "stop_longitude": 145.035461,
+        "stop_sequence": 0,
+        "routes": [
+            6
+        ]
+    },
+    "Seaford": {
+        "disruption_ids": [],
+        "stop_suburb": "Seaford",
+        "stop_name": "Seaford Station",
+        "stop_id": 1174,
+        "route_type": 0,
+        "stop_latitude": -38.1040154,
+        "stop_longitude": 145.128235,
+        "stop_sequence": 0,
+        "routes": [
+            6
+        ]
+    },
+    "Southland": {
+        "disruption_ids": [],
+        "stop_suburb": "Cheltenham",
+        "stop_name": "Southland Station",
+        "stop_id": 1001,
+        "route_type": 0,
+        "stop_latitude": -37.95876,
+        "stop_longitude": 145.049118,
+        "stop_sequence": 0,
+        "routes": [
+            6
+        ]
+    },
+    "Darling": {
+        "disruption_ids": [],
+        "stop_suburb": "Malvern East",
+        "stop_name": "Darling Station",
+        "stop_id": 1051,
+        "route_type": 0,
+        "stop_latitude": -37.8689575,
+        "stop_longitude": 145.062943,
+        "stop_sequence": 0,
+        "routes": [
+            7
+        ]
+    },
+    "East Malvern": {
+        "disruption_ids": [],
+        "stop_suburb": "Malvern East",
+        "stop_name": "East Malvern Station",
+        "stop_id": 1058,
+        "route_type": 0,
+        "stop_latitude": -37.87693,
+        "stop_longitude": 145.0694,
+        "stop_sequence": 0,
+        "routes": [
+            7
+        ]
+    },
+    "Gardiner": {
+        "disruption_ids": [],
+        "stop_suburb": "Glen Iris",
+        "stop_name": "Gardiner Station",
+        "stop_id": 1075,
+        "route_type": 0,
+        "stop_latitude": -37.8532829,
+        "stop_longitude": 145.051666,
+        "stop_sequence": 0,
+        "routes": [
+            7
+        ]
+    },
+    "Glen Iris": {
+        "disruption_ids": [],
+        "stop_suburb": "Glen Iris",
+        "stop_name": "Glen Iris Station",
+        "stop_id": 1077,
+        "route_type": 0,
+        "stop_latitude": -37.8593063,
+        "stop_longitude": 145.058228,
+        "stop_sequence": 0,
+        "routes": [
+            7
+        ]
+    },
+    "Glen Waverley": {
+        "disruption_ids": [],
+        "stop_suburb": "Glen Waverley",
+        "stop_name": "Glen Waverley Station",
+        "stop_id": 1078,
+        "route_type": 0,
+        "stop_latitude": -37.8795,
+        "stop_longitude": 145.162064,
+        "stop_sequence": 0,
+        "routes": [
+            7
+        ]
+    },
+    "Heyington": {
+        "disruption_ids": [],
+        "stop_suburb": "Toorak",
+        "stop_name": "Heyington Station",
+        "stop_id": 1094,
+        "route_type": 0,
+        "stop_latitude": -37.83467,
+        "stop_longitude": 145.022629,
+        "stop_sequence": 0,
+        "routes": [
+            7
+        ]
+    },
+    "Holmesglen": {
+        "disruption_ids": [],
+        "stop_suburb": "Malvern East",
+        "stop_name": "Holmesglen Station",
+        "stop_id": 1096,
+        "route_type": 0,
+        "stop_latitude": -37.8744,
+        "stop_longitude": 145.090652,
+        "stop_sequence": 0,
+        "routes": [
+            7
+        ]
+    },
+    "Jordanville": {
+        "disruption_ids": [],
+        "stop_suburb": "Mount Waverley",
+        "stop_name": "Jordanville Station",
+        "stop_id": 1105,
+        "route_type": 0,
+        "stop_latitude": -37.8736,
+        "stop_longitude": 145.112091,
+        "stop_sequence": 0,
+        "routes": [
+            7
+        ]
+    },
+    "Kooyong": {
+        "disruption_ids": [],
+        "stop_suburb": "Kooyong",
+        "stop_name": "Kooyong Station",
+        "stop_id": 1110,
+        "route_type": 0,
+        "stop_latitude": -37.8399277,
+        "stop_longitude": 145.033554,
+        "stop_sequence": 0,
+        "routes": [
+            7
+        ]
+    },
+    "Mount Waverley": {
+        "disruption_ids": [],
+        "stop_suburb": "Mount Waverley",
+        "stop_name": "Mount Waverley Station",
+        "stop_id": 1137,
+        "route_type": 0,
+        "stop_latitude": -37.87525,
+        "stop_longitude": 145.128052,
+        "stop_sequence": 0,
+        "routes": [
+            7
+        ]
+    },
+    "Syndal": {
+        "disruption_ids": [],
+        "stop_suburb": "Glen Waverley",
+        "stop_name": "Syndal Station",
+        "stop_id": 1190,
+        "route_type": 0,
+        "stop_latitude": -37.87623,
+        "stop_longitude": 145.14978,
+        "stop_sequence": 0,
+        "routes": [
+            7
+        ]
+    },
+    "Tooronga": {
+        "disruption_ids": [],
+        "stop_suburb": "Malvern",
+        "stop_name": "Tooronga Station",
+        "stop_id": 1195,
+        "route_type": 0,
+        "stop_latitude": -37.84937,
+        "stop_longitude": 145.041733,
+        "stop_sequence": 0,
+        "routes": [
+            7
+        ]
+    },
+    "Alphington": {
+        "disruption_ids": [],
+        "stop_suburb": "Alphington",
+        "stop_name": "Alphington Station",
+        "stop_id": 1004,
+        "route_type": 0,
+        "stop_latitude": -37.7783966,
+        "stop_longitude": 145.03125,
+        "stop_sequence": 0,
+        "routes": [
+            8
+        ]
+    },
+    "Darebin": {
+        "disruption_ids": [],
+        "stop_suburb": "Ivanhoe",
+        "stop_name": "Darebin Station",
+        "stop_id": 1050,
+        "route_type": 0,
+        "stop_latitude": -37.7749634,
+        "stop_longitude": 145.038483,
+        "stop_sequence": 0,
+        "routes": [
+            8
+        ]
+    },
+    "Dennis": {
+        "disruption_ids": [],
+        "stop_suburb": "Northcote",
+        "stop_name": "Dennis Station",
+        "stop_id": 1053,
+        "route_type": 0,
+        "stop_latitude": -37.7791824,
+        "stop_longitude": 145.00824,
+        "stop_sequence": 0,
+        "routes": [
+            8
+        ]
+    },
+    "Diamond Creek": {
+        "disruption_ids": [],
+        "stop_suburb": "Diamond Creek",
+        "stop_name": "Diamond Creek Station",
+        "stop_id": 1054,
+        "route_type": 0,
+        "stop_latitude": -37.6732941,
+        "stop_longitude": 145.158508,
+        "stop_sequence": 0,
+        "routes": [
+            8
+        ]
+    },
+    "Eaglemont": {
+        "disruption_ids": [],
+        "stop_suburb": "Eaglemont",
+        "stop_name": "Eaglemont Station",
+        "stop_id": 1056,
+        "route_type": 0,
+        "stop_latitude": -37.7635841,
+        "stop_longitude": 145.05394,
+        "stop_sequence": 0,
+        "routes": [
+            8
+        ]
+    },
+    "Eltham": {
+        "disruption_ids": [],
+        "stop_suburb": "Eltham",
+        "stop_name": "Eltham Station",
+        "stop_id": 1062,
+        "route_type": 0,
+        "stop_latitude": -37.71355,
+        "stop_longitude": 145.147827,
+        "stop_sequence": 0,
+        "routes": [
+            8
+        ]
+    },
+    "Fairfield": {
+        "disruption_ids": [],
+        "stop_suburb": "Fairfield",
+        "stop_name": "Fairfield Station",
+        "stop_id": 1065,
+        "route_type": 0,
+        "stop_latitude": -37.7791748,
+        "stop_longitude": 145.0169,
+        "stop_sequence": 0,
+        "routes": [
+            8
+        ]
+    },
+    "Greensborough": {
+        "disruption_ids": [],
+        "stop_suburb": "Greensborough",
+        "stop_name": "Greensborough Station",
+        "stop_id": 1084,
+        "route_type": 0,
+        "stop_latitude": -37.70395,
+        "stop_longitude": 145.108246,
+        "stop_sequence": 0,
+        "routes": [
+            8
+        ]
+    },
+    "Heidelberg": {
+        "disruption_ids": [],
+        "stop_suburb": "Heidelberg",
+        "stop_name": "Heidelberg Station",
+        "stop_id": 1093,
+        "route_type": 0,
+        "stop_latitude": -37.7570763,
+        "stop_longitude": 145.060684,
+        "stop_sequence": 0,
+        "routes": [
+            8
+        ]
+    },
+    "Hurstbridge": {
+        "disruption_ids": [],
+        "stop_suburb": "Hurstbridge",
+        "stop_name": "Hurstbridge Station",
+        "stop_id": 1100,
+        "route_type": 0,
+        "stop_latitude": -37.6394,
+        "stop_longitude": 145.192017,
+        "stop_sequence": 0,
+        "routes": [
+            8
+        ]
+    },
+    "Ivanhoe": {
+        "disruption_ids": [],
+        "stop_suburb": "Ivanhoe",
+        "stop_name": "Ivanhoe Station",
+        "stop_id": 1101,
+        "route_type": 0,
+        "stop_latitude": -37.768898,
+        "stop_longitude": 145.045425,
+        "stop_sequence": 0,
+        "routes": [
+            8
+        ]
+    },
+    "Macleod": {
+        "disruption_ids": [],
+        "stop_suburb": "Macleod",
+        "stop_name": "Macleod Station",
+        "stop_id": 1117,
+        "route_type": 0,
+        "stop_latitude": -37.72601,
+        "stop_longitude": 145.069153,
+        "stop_sequence": 0,
+        "routes": [
+            8
+        ]
+    },
+    "Montmorency": {
+        "disruption_ids": [],
+        "stop_suburb": "Montmorency",
+        "stop_name": "Montmorency Station",
+        "stop_id": 1130,
+        "route_type": 0,
+        "stop_latitude": -37.7152977,
+        "stop_longitude": 145.1215,
+        "stop_sequence": 0,
+        "routes": [
+            8
+        ]
+    },
+    "Rosanna": {
+        "disruption_ids": [],
+        "stop_suburb": "Rosanna",
+        "stop_name": "Rosanna Station",
+        "stop_id": 1168,
+        "route_type": 0,
+        "stop_latitude": -37.7428741,
+        "stop_longitude": 145.066147,
+        "stop_sequence": 0,
+        "routes": [
+            8
+        ]
+    },
+    "Watsonia": {
+        "disruption_ids": [],
+        "stop_suburb": "Watsonia",
+        "stop_name": "Watsonia Station",
+        "stop_id": 1203,
+        "route_type": 0,
+        "stop_latitude": -37.7109528,
+        "stop_longitude": 145.0838,
+        "stop_sequence": 0,
+        "routes": [
+            8
+        ]
+    },
+    "Wattle Glen": {
+        "disruption_ids": [],
+        "stop_suburb": "Wattle Glen",
+        "stop_name": "Wattle Glen Station",
+        "stop_id": 1204,
+        "route_type": 0,
+        "stop_latitude": -37.6639671,
+        "stop_longitude": 145.181625,
+        "stop_sequence": 0,
+        "routes": [
+            8
+        ]
+    },
+    "Westgarth": {
+        "disruption_ids": [],
+        "stop_suburb": "Northcote",
+        "stop_name": "Westgarth Station",
+        "stop_id": 1209,
+        "route_type": 0,
+        "stop_latitude": -37.7806168,
+        "stop_longitude": 144.999237,
+        "stop_sequence": 0,
+        "routes": [
+            8
+        ]
+    },
+    "Croydon": {
+        "disruption_ids": [],
+        "stop_suburb": "Croydon",
+        "stop_name": "Croydon Station",
+        "stop_id": 1048,
+        "route_type": 0,
+        "stop_latitude": -37.79544,
+        "stop_longitude": 145.2806,
+        "stop_sequence": 0,
+        "routes": [
+            9
+        ]
+    },
+    "Lilydale": {
+        "disruption_ids": [],
+        "stop_suburb": "Lilydale",
+        "stop_name": "Lilydale Station",
+        "stop_id": 1115,
+        "route_type": 0,
+        "stop_latitude": -37.7555161,
+        "stop_longitude": 145.347717,
+        "stop_sequence": 0,
+        "routes": [
+            9
+        ]
+    },
+    "Mooroolbark": {
+        "disruption_ids": [],
+        "stop_suburb": "Mooroolbark",
+        "stop_name": "Mooroolbark Station",
+        "stop_id": 1133,
+        "route_type": 0,
+        "stop_latitude": -37.7847481,
+        "stop_longitude": 145.312408,
+        "stop_sequence": 0,
+        "routes": [
+            9
+        ]
+    },
+    "Ringwood East": {
+        "disruption_ids": [],
+        "stop_suburb": "Ringwood East",
+        "stop_name": "Ringwood East Station",
+        "stop_id": 1164,
+        "route_type": 0,
+        "stop_latitude": -37.81197,
+        "stop_longitude": 145.2502,
+        "stop_sequence": 0,
+        "routes": [
+            9
+        ]
+    },
+    "Beaconsfield": {
+        "disruption_ids": [],
+        "stop_suburb": "Beaconsfield",
+        "stop_name": "Beaconsfield Station",
+        "stop_id": 1017,
+        "route_type": 0,
+        "stop_latitude": -38.050827,
+        "stop_longitude": 145.366074,
+        "stop_sequence": 0,
+        "routes": [
+            11
+        ]
+    },
+    "Berwick": {
+        "disruption_ids": [],
+        "stop_suburb": "Berwick",
+        "stop_name": "Berwick Station",
+        "stop_id": 1021,
+        "route_type": 0,
+        "stop_latitude": -38.04041,
+        "stop_longitude": 145.345718,
+        "stop_sequence": 0,
+        "routes": [
+            11
+        ]
+    },
+    "Cardinia Road": {
+        "disruption_ids": [],
+        "stop_suburb": "Pakenham",
+        "stop_name": "Cardinia Road Station",
+        "stop_id": 1223,
+        "route_type": 0,
+        "stop_latitude": -38.07129,
+        "stop_longitude": 145.43779,
+        "stop_sequence": 0,
+        "routes": [
+            11
+        ]
+    },
+    "Hallam": {
+        "disruption_ids": [],
+        "stop_suburb": "Hallam",
+        "stop_name": "Hallam Station",
+        "stop_id": 1085,
+        "route_type": 0,
+        "stop_latitude": -38.0177422,
+        "stop_longitude": 145.269775,
+        "stop_sequence": 0,
+        "routes": [
+            11
+        ]
+    },
+    "Narre Warren": {
+        "disruption_ids": [],
+        "stop_suburb": "Narre Warren",
+        "stop_name": "Narre Warren Station",
+        "stop_id": 1139,
+        "route_type": 0,
+        "stop_latitude": -38.02781,
+        "stop_longitude": 145.30397,
+        "stop_sequence": 0,
+        "routes": [
+            11
+        ]
+    },
+    "Officer": {
+        "disruption_ids": [],
+        "stop_suburb": "Officer",
+        "stop_name": "Officer Station",
+        "stop_id": 1151,
+        "route_type": 0,
+        "stop_latitude": -38.066143,
+        "stop_longitude": 145.411,
+        "stop_sequence": 0,
+        "routes": [
+            11
+        ]
+    },
+    "Pakenham": {
+        "disruption_ids": [],
+        "stop_suburb": "Pakenham",
+        "stop_name": "Pakenham Station",
+        "stop_id": 1153,
+        "route_type": 0,
+        "stop_latitude": -38.0806122,
+        "stop_longitude": 145.486374,
+        "stop_sequence": 0,
+        "routes": [
+            11
+        ]
+    },
+    "Balaclava": {
+        "disruption_ids": [],
+        "stop_suburb": "Balaclava",
+        "stop_name": "Balaclava Station",
+        "stop_id": 1013,
+        "route_type": 0,
+        "stop_latitude": -37.8694878,
+        "stop_longitude": 144.993515,
+        "stop_sequence": 0,
+        "routes": [
+            12
+        ]
+    },
+    "Brighton Beach": {
+        "disruption_ids": [],
+        "stop_suburb": "Brighton",
+        "stop_name": "Brighton Beach Station",
+        "stop_id": 1027,
+        "route_type": 0,
+        "stop_latitude": -37.9264832,
+        "stop_longitude": 144.989151,
+        "stop_sequence": 0,
+        "routes": [
+            12
+        ]
+    },
+    "Elsternwick": {
+        "disruption_ids": [],
+        "stop_suburb": "Elsternwick",
+        "stop_name": "Elsternwick Station",
+        "stop_id": 1061,
+        "route_type": 0,
+        "stop_latitude": -37.88475,
+        "stop_longitude": 145.0009,
+        "stop_sequence": 0,
+        "routes": [
+            12
+        ]
+    },
+    "Gardenvale": {
+        "disruption_ids": [],
+        "stop_suburb": "Brighton",
+        "stop_name": "Gardenvale Station",
+        "stop_id": 1074,
+        "route_type": 0,
+        "stop_latitude": -37.8966942,
+        "stop_longitude": 145.004166,
+        "stop_sequence": 0,
+        "routes": [
+            12
+        ]
+    },
+    "Hampton": {
+        "disruption_ids": [],
+        "stop_suburb": "Hampton",
+        "stop_name": "Hampton Station",
+        "stop_id": 1086,
+        "route_type": 0,
+        "stop_latitude": -37.937973,
+        "stop_longitude": 145.001465,
+        "stop_sequence": 0,
+        "routes": [
+            12
+        ]
+    },
+    "Middle Brighton": {
+        "disruption_ids": [],
+        "stop_suburb": "Brighton",
+        "stop_name": "Middle Brighton Station",
+        "stop_id": 1126,
+        "route_type": 0,
+        "stop_latitude": -37.9151344,
+        "stop_longitude": 144.996292,
+        "stop_sequence": 0,
+        "routes": [
+            12
+        ]
+    },
+    "North Brighton": {
+        "disruption_ids": [],
+        "stop_suburb": "Brighton",
+        "stop_name": "North Brighton Station",
+        "stop_id": 1143,
+        "route_type": 0,
+        "stop_latitude": -37.9048843,
+        "stop_longitude": 145.002609,
+        "stop_sequence": 0,
+        "routes": [
+            12
+        ]
+    },
+    "Prahran": {
+        "disruption_ids": [],
+        "stop_suburb": "Prahran",
+        "stop_name": "Prahran Station",
+        "stop_id": 1158,
+        "route_type": 0,
+        "stop_latitude": -37.8495178,
+        "stop_longitude": 144.989853,
+        "stop_sequence": 0,
+        "routes": [
+            12
+        ]
+    },
+    "Ripponlea": {
+        "disruption_ids": [],
+        "stop_suburb": "Ripponlea",
+        "stop_name": "Ripponlea Station",
+        "stop_id": 1165,
+        "route_type": 0,
+        "stop_latitude": -37.8759079,
+        "stop_longitude": 144.995239,
+        "stop_sequence": 0,
+        "routes": [
+            12
+        ]
+    },
+    "Sandringham": {
+        "disruption_ids": [],
+        "stop_suburb": "Sandringham",
+        "stop_name": "Sandringham Station",
+        "stop_id": 1173,
+        "route_type": 0,
+        "stop_latitude": -37.95033,
+        "stop_longitude": 145.004562,
+        "stop_sequence": 0,
+        "routes": [
+            12
+        ]
+    },
+    "Windsor": {
+        "disruption_ids": [],
+        "stop_suburb": "Windsor",
+        "stop_name": "Windsor Station",
+        "stop_id": 1214,
+        "route_type": 0,
+        "stop_latitude": -37.8560524,
+        "stop_longitude": 144.992035,
+        "stop_sequence": 0,
+        "routes": [
+            12
+        ]
+    },
+    "Baxter": {
+        "disruption_ids": [],
+        "stop_suburb": "Baxter",
+        "stop_name": "Baxter Station",
+        "stop_id": 1015,
+        "route_type": 0,
+        "stop_latitude": -38.194046,
+        "stop_longitude": 145.160522,
+        "stop_sequence": 0,
+        "routes": [
+            13
+        ]
+    },
+    "Bittern": {
+        "disruption_ids": [],
+        "stop_suburb": "Bittern",
+        "stop_name": "Bittern Station",
+        "stop_id": 1022,
+        "route_type": 0,
+        "stop_latitude": -38.33739,
+        "stop_longitude": 145.178024,
+        "stop_sequence": 0,
+        "routes": [
+            13
+        ]
+    },
+    "Crib Point": {
+        "disruption_ids": [],
+        "stop_suburb": "Crib Point",
+        "stop_name": "Crib Point Station",
+        "stop_id": 1046,
+        "route_type": 0,
+        "stop_latitude": -38.36612,
+        "stop_longitude": 145.204041,
+        "stop_sequence": 0,
+        "routes": [
+            13
+        ]
+    },
+    "Hastings": {
+        "disruption_ids": [],
+        "stop_suburb": "Hastings",
+        "stop_name": "Hastings Station",
+        "stop_id": 1088,
+        "route_type": 0,
+        "stop_latitude": -38.30566,
+        "stop_longitude": 145.185974,
+        "stop_sequence": 0,
+        "routes": [
+            13
+        ]
+    },
+    "Leawarra": {
+        "disruption_ids": [],
+        "stop_suburb": "Frankston",
+        "stop_name": "Leawarra Station",
+        "stop_id": 1114,
+        "route_type": 0,
+        "stop_latitude": -38.1520348,
+        "stop_longitude": 145.139542,
+        "stop_sequence": 0,
+        "routes": [
+            13
+        ]
+    },
+    "Morradoo": {
+        "disruption_ids": [],
+        "stop_suburb": "Crib Point",
+        "stop_name": "Morradoo Station",
+        "stop_id": 1136,
+        "route_type": 0,
+        "stop_latitude": -38.3540344,
+        "stop_longitude": 145.1896,
+        "stop_sequence": 0,
+        "routes": [
+            13
+        ]
+    },
+    "Somerville": {
+        "disruption_ids": [],
+        "stop_suburb": "Somerville",
+        "stop_name": "Somerville Station",
+        "stop_id": 1178,
+        "route_type": 0,
+        "stop_latitude": -38.22534,
+        "stop_longitude": 145.176239,
+        "stop_sequence": 0,
+        "routes": [
+            13
+        ]
+    },
+    "Stony Point": {
+        "disruption_ids": [],
+        "stop_suburb": "Crib Point",
+        "stop_name": "Stony Point Station",
+        "stop_id": 1185,
+        "route_type": 0,
+        "stop_latitude": -38.3742371,
+        "stop_longitude": 145.221848,
+        "stop_sequence": 0,
+        "routes": [
+            13
+        ]
+    },
+    "Tyabb": {
+        "disruption_ids": [],
+        "stop_suburb": "Tyabb",
+        "stop_name": "Tyabb Station",
+        "stop_id": 1197,
+        "route_type": 0,
+        "stop_latitude": -38.2598152,
+        "stop_longitude": 145.1864,
+        "stop_sequence": 0,
+        "routes": [
+            13
+        ]
+    },
+    "Albion": {
+        "disruption_ids": [],
+        "stop_suburb": "Sunshine North",
+        "stop_name": "Albion Station",
+        "stop_id": 1003,
+        "route_type": 0,
+        "stop_latitude": -37.7776566,
+        "stop_longitude": 144.8247,
+        "stop_sequence": 0,
+        "routes": [
+            14
+        ]
+    },
+    "Diggers Rest": {
+        "disruption_ids": [],
+        "stop_suburb": "Diggers Rest",
+        "stop_name": "Diggers Rest Station",
+        "stop_id": 1055,
+        "route_type": 0,
+        "stop_latitude": -37.6270142,
+        "stop_longitude": 144.719925,
+        "stop_sequence": 0,
+        "routes": [
+            14
+        ]
+    },
+    "Flemington Racecourse": {
+        "disruption_ids": [],
+        "stop_suburb": "Flemington",
+        "stop_name": "Flemington Racecourse Station",
+        "stop_id": 1070,
+        "route_type": 0,
+        "stop_latitude": -37.7871971,
+        "stop_longitude": 144.9076,
+        "stop_sequence": 0,
+        "routes": [
+            14
+        ]
+    },
+    "Footscray": {
+        "disruption_ids": [],
+        "stop_suburb": "Footscray",
+        "stop_name": "Footscray Station",
+        "stop_id": 1072,
+        "route_type": 0,
+        "stop_latitude": -37.8010864,
+        "stop_longitude": 144.9032,
+        "stop_sequence": 0,
+        "routes": [
+            14,
+            16,
+            17
+        ]
+    },
+    "Ginifer": {
+        "disruption_ids": [],
+        "stop_suburb": "St Albans",
+        "stop_name": "Ginifer Station",
+        "stop_id": 1076,
+        "route_type": 0,
+        "stop_latitude": -37.7575073,
+        "stop_longitude": 144.80957,
+        "stop_sequence": 0,
+        "routes": [
+            14
+        ]
+    },
+    "Keilor Plains": {
+        "disruption_ids": [],
+        "stop_suburb": "St Albans",
+        "stop_name": "Keilor Plains Station",
+        "stop_id": 1107,
+        "route_type": 0,
+        "stop_latitude": -37.7292747,
+        "stop_longitude": 144.793732,
+        "stop_sequence": 0,
+        "routes": [
+            14
+        ]
+    },
+    "Middle Footscray": {
+        "disruption_ids": [],
+        "stop_suburb": "Footscray",
+        "stop_name": "Middle Footscray Station",
+        "stop_id": 1127,
+        "route_type": 0,
+        "stop_latitude": -37.8025,
+        "stop_longitude": 144.891479,
+        "stop_sequence": 0,
+        "routes": [
+            14
+        ]
+    },
+    "St Albans": {
+        "disruption_ids": [],
+        "stop_suburb": "St Albans",
+        "stop_name": "St Albans Station",
+        "stop_id": 1184,
+        "route_type": 0,
+        "stop_latitude": -37.7448578,
+        "stop_longitude": 144.800049,
+        "stop_sequence": 0,
+        "routes": [
+            14
+        ]
+    },
+    "Sunbury": {
+        "disruption_ids": [],
+        "stop_suburb": "Sunbury",
+        "stop_name": "Sunbury Station",
+        "stop_id": 1187,
+        "route_type": 0,
+        "stop_latitude": -37.57909,
+        "stop_longitude": 144.727325,
+        "stop_sequence": 0,
+        "routes": [
+            14
+        ]
+    },
+    "Sunshine": {
+        "disruption_ids": [],
+        "stop_suburb": "Sunshine",
+        "stop_name": "Sunshine Station",
+        "stop_id": 1218,
+        "route_type": 0,
+        "stop_latitude": -37.7877426,
+        "stop_longitude": 144.83197,
+        "stop_sequence": 0,
+        "routes": [
+            14
+        ]
+    },
+    "Tottenham": {
+        "disruption_ids": [],
+        "stop_suburb": "West Footscray",
+        "stop_name": "Tottenham Station",
+        "stop_id": 1196,
+        "route_type": 0,
+        "stop_latitude": -37.7992554,
+        "stop_longitude": 144.862946,
+        "stop_sequence": 0,
+        "routes": [
+            14
+        ]
+    },
+    "Watergardens": {
+        "disruption_ids": [],
+        "stop_suburb": "Sydenham",
+        "stop_name": "Watergardens Station",
+        "stop_id": 1202,
+        "route_type": 0,
+        "stop_latitude": -37.7011261,
+        "stop_longitude": 144.774185,
+        "stop_sequence": 0,
+        "routes": [
+            14
+        ]
+    },
+    "West Footscray": {
+        "disruption_ids": [],
+        "stop_suburb": "West Footscray",
+        "stop_name": "West Footscray Station",
+        "stop_id": 1206,
+        "route_type": 0,
+        "stop_latitude": -37.80181,
+        "stop_longitude": 144.88533,
+        "stop_sequence": 0,
+        "routes": [
+            14
+        ]
+    },
+    "Anstey": {
+        "disruption_ids": [],
+        "stop_suburb": "Brunswick",
+        "stop_name": "Anstey Station",
+        "stop_id": 1006,
+        "route_type": 0,
+        "stop_latitude": -37.76124,
+        "stop_longitude": 144.9607,
+        "stop_sequence": 0,
+        "routes": [
+            15
+        ]
+    },
+    "Batman": {
+        "disruption_ids": [],
+        "stop_suburb": "Coburg North",
+        "stop_name": "Batman Station",
+        "stop_id": 1014,
+        "route_type": 0,
+        "stop_latitude": -37.7335243,
+        "stop_longitude": 144.96283,
+        "stop_sequence": 0,
+        "routes": [
+            15
+        ]
+    },
+    "Brunswick": {
+        "disruption_ids": [],
+        "stop_suburb": "Brunswick",
+        "stop_name": "Brunswick Station",
+        "stop_id": 1029,
+        "route_type": 0,
+        "stop_latitude": -37.76772,
+        "stop_longitude": 144.9596,
+        "stop_sequence": 0,
+        "routes": [
+            15
+        ]
+    },
+    "Coburg": {
+        "disruption_ids": [],
+        "stop_suburb": "Coburg",
+        "stop_name": "Coburg Station",
+        "stop_id": 1042,
+        "route_type": 0,
+        "stop_latitude": -37.74234,
+        "stop_longitude": 144.963348,
+        "stop_sequence": 0,
+        "routes": [
+            15
+        ]
+    },
+    "Fawkner": {
+        "disruption_ids": [],
+        "stop_suburb": "Fawkner",
+        "stop_name": "Fawkner Station",
+        "stop_id": 1066,
+        "route_type": 0,
+        "stop_latitude": -37.7146225,
+        "stop_longitude": 144.960556,
+        "stop_sequence": 0,
+        "routes": [
+            15
+        ]
+    },
+    "Flemington Bridge": {
+        "disruption_ids": [],
+        "stop_suburb": "North Melbourne",
+        "stop_name": "Flemington Bridge Station",
+        "stop_id": 1069,
+        "route_type": 0,
+        "stop_latitude": -37.7881355,
+        "stop_longitude": 144.939316,
+        "stop_sequence": 0,
+        "routes": [
+            15
+        ]
+    },
+    "Gowrie": {
+        "disruption_ids": [],
+        "stop_suburb": "Glenroy",
+        "stop_name": "Gowrie Station",
+        "stop_id": 1083,
+        "route_type": 0,
+        "stop_latitude": -37.700676,
+        "stop_longitude": 144.958878,
+        "stop_sequence": 0,
+        "routes": [
+            15
+        ]
+    },
+    "Jewell": {
+        "disruption_ids": [],
+        "stop_suburb": "Brunswick",
+        "stop_name": "Jewell Station",
+        "stop_id": 1103,
+        "route_type": 0,
+        "stop_latitude": -37.7749825,
+        "stop_longitude": 144.95871,
+        "stop_sequence": 0,
+        "routes": [
+            15
+        ]
+    },
+    "Macaulay": {
+        "disruption_ids": [],
+        "stop_suburb": "North Melbourne",
+        "stop_name": "Macaulay Station",
+        "stop_id": 1116,
+        "route_type": 0,
+        "stop_latitude": -37.7942619,
+        "stop_longitude": 144.936172,
+        "stop_sequence": 0,
+        "routes": [
+            15
+        ]
+    },
+    "Merlynston": {
+        "disruption_ids": [],
+        "stop_suburb": "Coburg North",
+        "stop_name": "Merlynston Station",
+        "stop_id": 1124,
+        "route_type": 0,
+        "stop_latitude": -37.7209358,
+        "stop_longitude": 144.961319,
+        "stop_sequence": 0,
+        "routes": [
+            15
+        ]
+    },
+    "Moreland": {
+        "disruption_ids": [],
+        "stop_suburb": "Coburg",
+        "stop_name": "Moreland Station",
+        "stop_id": 1135,
+        "route_type": 0,
+        "stop_latitude": -37.7544823,
+        "stop_longitude": 144.961823,
+        "stop_sequence": 0,
+        "routes": [
+            15
+        ]
+    },
+    "Royal Park": {
+        "disruption_ids": [],
+        "stop_suburb": "Parkville",
+        "stop_name": "Royal Park Station",
+        "stop_id": 1169,
+        "route_type": 0,
+        "stop_latitude": -37.7811928,
+        "stop_longitude": 144.9523,
+        "stop_sequence": 0,
+        "routes": [
+            15
+        ]
+    },
+    "Upfield": {
+        "disruption_ids": [],
+        "stop_suburb": "Coolaroo",
+        "stop_name": "Upfield Station",
+        "stop_id": 1198,
+        "route_type": 0,
+        "stop_latitude": -37.6660767,
+        "stop_longitude": 144.946747,
+        "stop_sequence": 0,
+        "routes": [
+            15
+        ]
+    },
+    "Aircraft": {
+        "disruption_ids": [],
+        "stop_suburb": "Laverton",
+        "stop_name": "Aircraft Station",
+        "stop_id": 1220,
+        "route_type": 0,
+        "stop_latitude": -37.8666039,
+        "stop_longitude": 144.7608,
+        "stop_sequence": 0,
+        "routes": [
+            16
+        ]
+    },
+    "Altona": {
+        "disruption_ids": [],
+        "stop_suburb": "Altona",
+        "stop_name": "Altona Station",
+        "stop_id": 1005,
+        "route_type": 0,
+        "stop_latitude": -37.86715,
+        "stop_longitude": 144.829651,
+        "stop_sequence": 0,
+        "routes": [
+            16
+        ]
+    },
+    "Hoppers Crossing": {
+        "disruption_ids": [],
+        "stop_suburb": "Hoppers Crossing",
+        "stop_name": "Hoppers Crossing Station",
+        "stop_id": 1097,
+        "route_type": 0,
+        "stop_latitude": -37.8832779,
+        "stop_longitude": 144.700958,
+        "stop_sequence": 0,
+        "routes": [
+            16
+        ]
+    },
+    "Laverton": {
+        "disruption_ids": [],
+        "stop_suburb": "Laverton",
+        "stop_name": "Laverton Station",
+        "stop_id": 1113,
+        "route_type": 0,
+        "stop_latitude": -37.8636932,
+        "stop_longitude": 144.772614,
+        "stop_sequence": 0,
+        "routes": [
+            16
+        ]
+    },
+    "Newport": {
+        "disruption_ids": [],
+        "stop_suburb": "Newport",
+        "stop_name": "Newport Station",
+        "stop_id": 1141,
+        "route_type": 0,
+        "stop_latitude": -37.8427124,
+        "stop_longitude": 144.8836,
+        "stop_sequence": 0,
+        "routes": [
+            16,
+            17
+        ]
+    },
+    "Seaholme": {
+        "disruption_ids": [],
+        "stop_suburb": "Seaholme",
+        "stop_name": "Seaholme Station",
+        "stop_id": 1175,
+        "route_type": 0,
+        "stop_latitude": -37.8678436,
+        "stop_longitude": 144.840958,
+        "stop_sequence": 0,
+        "routes": [
+            16
+        ]
+    },
+    "Seddon": {
+        "disruption_ids": [],
+        "stop_suburb": "Seddon",
+        "stop_name": "Seddon Station",
+        "stop_id": 1176,
+        "route_type": 0,
+        "stop_latitude": -37.8090019,
+        "stop_longitude": 144.89566,
+        "stop_sequence": 0,
+        "routes": [
+            16,
+            17
+        ]
+    },
+    "South Kensington": {
+        "disruption_ids": [],
+        "stop_suburb": "Kensington",
+        "stop_name": "South Kensington Station",
+        "stop_id": 1179,
+        "route_type": 0,
+        "stop_latitude": -37.7995338,
+        "stop_longitude": 144.925476,
+        "stop_sequence": 0,
+        "routes": [
+            16,
+            17
+        ]
+    },
+    "Spotswood": {
+        "disruption_ids": [],
+        "stop_suburb": "Spotswood",
+        "stop_name": "Spotswood Station",
+        "stop_id": 1182,
+        "route_type": 0,
+        "stop_latitude": -37.8306351,
+        "stop_longitude": 144.885941,
+        "stop_sequence": 0,
+        "routes": [
+            16,
+            17
+        ]
+    },
+    "Werribee": {
+        "disruption_ids": [],
+        "stop_suburb": "Werribee",
+        "stop_name": "Werribee Station",
+        "stop_id": 1205,
+        "route_type": 0,
+        "stop_latitude": -37.8993835,
+        "stop_longitude": 144.661118,
+        "stop_sequence": 0,
+        "routes": [
+            16
+        ]
+    },
+    "Westona": {
+        "disruption_ids": [],
+        "stop_suburb": "Altona",
+        "stop_name": "Westona Station",
+        "stop_id": 1210,
+        "route_type": 0,
+        "stop_latitude": -37.8651657,
+        "stop_longitude": 144.813492,
+        "stop_sequence": 0,
+        "routes": [
+            16
+        ]
+    },
+    "Williams Landing": {
+        "disruption_ids": [],
+        "stop_suburb": "Williams Landing",
+        "stop_name": "Williams Landing Station",
+        "stop_id": 1225,
+        "route_type": 0,
+        "stop_latitude": -37.86987,
+        "stop_longitude": 144.747452,
+        "stop_sequence": 0,
+        "routes": [
+            16
+        ]
+    },
+    "Yarraville": {
+        "disruption_ids": [],
+        "stop_suburb": "Yarraville",
+        "stop_name": "Yarraville Station",
+        "stop_id": 1216,
+        "route_type": 0,
+        "stop_latitude": -37.81585,
+        "stop_longitude": 144.889938,
+        "stop_sequence": 0,
+        "routes": [
+            16,
+            17
+        ]
+    },
+    "North Williamstown": {
+        "disruption_ids": [],
+        "stop_suburb": "Williamstown",
+        "stop_name": "North Williamstown Station",
+        "stop_id": 1146,
+        "route_type": 0,
+        "stop_latitude": -37.85733,
+        "stop_longitude": 144.889069,
+        "stop_sequence": 0,
+        "routes": [
+            17
+        ]
+    },
+    "Williamstown": {
+        "disruption_ids": [],
+        "stop_suburb": "Williamstown",
+        "stop_name": "Williamstown Station",
+        "stop_id": 1211,
+        "route_type": 0,
+        "stop_latitude": -37.8677559,
+        "stop_longitude": 144.905319,
+        "stop_sequence": 0,
+        "routes": [
+            17
+        ]
+    },
+    "Williamstown Beach": {
+        "disruption_ids": [],
+        "stop_suburb": "Williamstown",
+        "stop_name": "Williamstown Beach Station",
+        "stop_id": 1212,
+        "route_type": 0,
+        "stop_latitude": -37.8639832,
+        "stop_longitude": 144.894485,
+        "stop_sequence": 0,
+        "routes": [
+            17
+        ]
+    }
+}

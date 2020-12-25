@@ -1,0 +1,114 @@
+{
+    "1":{
+    "route_type": 0,
+    "route_id": 1,
+    "route_name": "Alamein",
+    "route_number": "",
+    "route_gtfs_id": "2-ALM"
+    },
+    "2":{
+    "route_type": 0,
+    "route_id": 2,
+    "route_name": "Belgrave",
+    "route_number": "",
+    "route_gtfs_id": "2-BEL"
+    },
+    "3":{
+    "route_type": 0,
+    "route_id": 3,
+    "route_name": "Craigieburn",
+    "route_number": "",
+    "route_gtfs_id": "2-B31"
+    },
+    "4":{
+    "route_type": 0,
+    "route_id": 4,
+    "route_name": "Cranbourne",
+    "route_number": "",
+    "route_gtfs_id": "2-CRB"
+    },
+    "5":{
+    "route_type": 0,
+    "route_id": 5,
+    "route_name": "Mernda",
+    "route_number": "",
+    "route_gtfs_id": "2-MER"
+    },
+    "6":{
+    "route_type": 0,
+    "route_id": 6,
+    "route_name": "Frankston",
+    "route_number": "",
+    "route_gtfs_id": "2-FKN"
+    },
+    "7":{
+    "route_type": 0,
+    "route_id": 7,
+    "route_name": "Glen Waverley",
+    "route_number": "",
+    "route_gtfs_id": "2-GLW"
+    },
+    "8":{
+    "route_type": 0,
+    "route_id": 8,
+    "route_name": "Hurstbridge",
+    "route_number": "",
+    "route_gtfs_id": "2-HBG"
+    },
+    "9":{
+    "route_type": 0,
+    "route_id": 9,
+    "route_name": "Lilydale",
+    "route_number": "",
+    "route_gtfs_id": "2-LIL"
+    },
+    "11":{
+    "route_type": 0,
+    "route_id": 11,
+    "route_name": "Pakenham",
+    "route_number": "",
+    "route_gtfs_id": "2-PKM"
+    },
+    "12":{
+    "route_type": 0,
+    "route_id": 12,
+    "route_name": "Sandringham",
+    "route_number": "",
+    "route_gtfs_id": "2-SDM"
+    },
+    "13":{
+    "route_type": 0,
+    "route_id": 13,
+    "route_name": "Stony Point",
+    "route_number": "",
+    "route_gtfs_id": "2-SPT"
+    },
+    "14":{
+    "route_type": 0,
+    "route_id": 14,
+    "route_name": "Sunbury",
+    "route_number": "",
+    "route_gtfs_id": "2-SYM"
+    },
+    "15":{
+    "route_type": 0,
+    "route_id": 15,
+    "route_name": "Upfield",
+    "route_number": "",
+    "route_gtfs_id": "2-UFD"
+    },
+    "16":{
+    "route_type": 0,
+    "route_id": 16,
+    "route_name": "Werribee",
+    "route_number": "",
+    "route_gtfs_id": "2-WBE"
+    },
+    "17":{
+    "route_type": 0,
+    "route_id": 17,
+    "route_name": "Williamstown",
+    "route_number": "",
+    "route_gtfs_id": "2-WMN"
+    }
+  }

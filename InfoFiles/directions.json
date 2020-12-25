@@ -1,0 +1,194 @@
+{
+    "1": [
+        {
+            "direction_id": 0,
+            "direction_name": "Alamein",
+            "route_type": 0
+        },
+        {
+            "direction_id": 1,
+            "direction_name": "City (Flinders Street)",
+            "route_type": 0
+        }
+    ],
+    "2": [
+        {
+            "direction_id": 1,
+            "direction_name": "City (Flinders Street)",
+            "route_type": 0
+        },
+        {
+            "direction_id": 3,
+            "direction_name": "Belgrave",
+            "route_type": 0
+        }
+    ],
+    "3": [
+        {
+            "direction_id": 1,
+            "direction_name": "City (Flinders Street)",
+            "route_type": 0
+        },
+        {
+            "direction_id": 2,
+            "direction_name": "Craigieburn",
+            "route_type": 0
+        }
+    ],
+    "4": [
+        {
+            "direction_id": 1,
+            "direction_name": "City (Flinders Street)",
+            "route_type": 0
+        },
+        {
+            "direction_id": 4,
+            "direction_name": "Cranbourne",
+            "route_type": 0
+        }
+    ],
+    "5": [
+        {
+            "direction_id": 1,
+            "direction_name": "City (Flinders Street)",
+            "route_type": 0
+        },
+        {
+            "direction_id": 9,
+            "direction_name": "Mernda",
+            "route_type": 0
+        }
+    ],
+    "6": [
+        {
+            "direction_id": 1,
+            "direction_name": "City (Flinders Street)",
+            "route_type": 0
+        },
+        {
+            "direction_id": 5,
+            "direction_name": "Frankston",
+            "route_type": 0
+        }
+    ],
+    "7": [
+        {
+            "direction_id": 1,
+            "direction_name": "City (Flinders Street)",
+            "route_type": 0
+        },
+        {
+            "direction_id": 6,
+            "direction_name": "Glen Waverley",
+            "route_type": 0
+        }
+    ],
+    "8": [
+        {
+            "direction_id": 1,
+            "direction_name": "City (Flinders Street)",
+            "route_type": 0
+        },
+        {
+            "direction_id": 7,
+            "direction_name": "Hurstbridge",
+            "route_type": 0
+        }
+    ],
+    "9": [
+        {
+            "direction_id": 1,
+            "direction_name": "City (Flinders Street)",
+            "route_type": 0
+        },
+        {
+            "direction_id": 8,
+            "direction_name": "Lilydale",
+            "route_type": 0
+        }
+    ],
+    "11": [
+        {
+            "direction_id": 1,
+            "direction_name": "City (Flinders Street)",
+            "route_type": 0
+        },
+        {
+            "direction_id": 10,
+            "direction_name": "Pakenham",
+            "route_type": 0
+        }
+    ],
+    "12": [
+        {
+            "direction_id": 1,
+            "direction_name": "City (Flinders Street)",
+            "route_type": 0
+        },
+        {
+            "direction_id": 11,
+            "direction_name": "Sandringham",
+            "route_type": 0
+        }
+    ],
+    "13": [
+        {
+            "direction_id": 5,
+            "direction_name": "Frankston",
+            "route_type": 0
+        },
+        {
+            "direction_id": 12,
+            "direction_name": "Stony Point",
+            "route_type": 0
+        }
+    ],
+    "14": [
+        {
+            "direction_id": 1,
+            "direction_name": "City (Flinders Street)",
+            "route_type": 0
+        },
+        {
+            "direction_id": 13,
+            "direction_name": "Sunbury",
+            "route_type": 0
+        }
+    ],
+    "15": [
+        {
+            "direction_id": 1,
+            "direction_name": "City (Flinders Street)",
+            "route_type": 0
+        },
+        {
+            "direction_id": 14,
+            "direction_name": "Upfield",
+            "route_type": 0
+        }
+    ],
+    "16": [
+        {
+            "direction_id": 1,
+            "direction_name": "City (Flinders Street)",
+            "route_type": 0
+        },
+        {
+            "direction_id": 15,
+            "direction_name": "Werribee",
+            "route_type": 0
+        }
+    ],
+    "17": [
+        {
+            "direction_id": 1,
+            "direction_name": "City (Flinders Street)",
+            "route_type": 0
+        },
+        {
+            "direction_id": 16,
+            "direction_name": "Williamstown",
+            "route_type": 0
+        }
+    ]
+}
