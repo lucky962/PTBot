@@ -53,7 +53,7 @@ class TrainCommands(commands.Cog):
     async def get_departures(self, ctx, route_type, station):
         noinemoji = ["0️⃣", "1️⃣", "2️⃣", "3️⃣", "4️⃣", "5️⃣"]
         await ctx.trigger_typing()
-        station = ' '.join([(word not in Station_Codes)*word or Station_Codes[word] for word in station.split(' ')])
+        station = ' '.join([(word.upper() not in Station_Codes)*word or Station_Codes[word.upper()] for word in station.split(' ')])
         nexttrains = PTV.search(station, route_types=route_type, include_addresses=False, include_outlets=False, match_stop_by_suburb=False, match_route_by_suburb=False)
         i = 0
         trainoptionsmessage = []
