@@ -9,6 +9,7 @@ import json
 import dbl
 import psycopg2
 import logging
+import pytz
 from discord.ext import commands
 
 from classes.PTVFormatter import PTVFormatter
@@ -121,7 +122,7 @@ async def disruptions_task():
                     if messages[j]:
                         messagerouteid = j
                         messageid = messages[j]
-                        disruptionsmsg = discord.Embed(name="Disruptions", description=bot.routes[str(messagerouteid)]["route_name"], timestamp=datetime.datetime.now() - datetime.timedelta(hours=10), color=3447003)
+                        disruptionsmsg = discord.Embed(name="Disruptions", description=bot.routes[str(messagerouteid)]["route_name"], timestamp=datetime.datetime.now(), color=3447003)
                         disruptionsmsg = PTV.disruptions_to_embed(disruptionsmsg, bot.disruptions[str(messagerouteid)], messagerouteid, bot)
                         disruptionsmsg.set_footer(icon_url=bot.user.avatar_url, text=f'Last Disruption Update ')
                         try:
