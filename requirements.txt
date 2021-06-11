@@ -20,3 +20,4 @@ ssh-import-id
 urllib3
 wheel
 psycopg2-binary
+pytz
