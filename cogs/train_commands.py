@@ -4,6 +4,7 @@ import datetime
 import json
 import asyncio
 import psycopg2
+import pytz
 from discord.ext import commands
 from ptv.client import PTVClient
 from classes.PTVFormatter import PTVFormatter
@@ -101,9 +102,9 @@ class TrainCommands(commands.Cog):
             for train in nexttrains['departures']:
                 if train['direction_id'] == directions['direction_id'] and traincounter < 3:
                     traincounter += 1
-                    train['scheduled_departure_utc'] = (datetime.datetime.strptime(train['scheduled_departure_utc'],'%Y-%m-%dT%H:%M:%SZ') + datetime.timedelta(hours=10))
+                    train['scheduled_departure_utc'] = pytz.timezone("Etc/UTC").localize(datetime.datetime.strptime(train['scheduled_departure_utc'],'%Y-%m-%dT%H:%M:%SZ')).astimezone(pytz.timezone('Australia/Melbourne'))
                     try:
-                        train['estimated_departure_utc'] = (datetime.datetime.strptime(train['estimated_departure_utc'],'%Y-%m-%dT%H:%M:%SZ') + datetime.timedelta(hours=10))
+                        train['estimated_departure_utc'] = pytz.timezone("Etc/UTC").localize(datetime.datetime.strptime(train['estimated_departure_utc'],'%Y-%m-%dT%H:%M:%SZ')).astimezone(pytz.timezone('Australia/Melbourne'))
                     except TypeError:
                         pass
                     flags = ""
@@ -113,7 +114,7 @@ class TrainCommands(commands.Cog):
                         flags += ("VLine Train")
                     if "S_VCH" in train['flags']:
                         flags += ("VLine Coach")
-                    nexttrain.append(f"{'Plat: ' + train['platform_number'] + '.' if train['platform_number'] else ''} {nexttrains['runs'][str(train['run_id'])]['vehicle_descriptor']['description'] if  str(train['run_id']) in nexttrains['runs'] and nexttrains['runs'][str(train['run_id'])]['vehicle_descriptor'] and nexttrains['runs'][str(train['run_id'])]['vehicle_descriptor']['description'] else ''} \nTo: {nexttrains['runs'][str(train['run_id'])]['destination_name']}\nScheduled to leave at: {train['scheduled_departure_utc'].strftime('%I:%M%p')}. ETA: {(str(relativedelta(train.get('estimated_departure_utc'), datetime.datetime.now()).minutes) + ' minutes' if type(train.get('estimated_departure_utc')) == datetime.datetime else train.get('estimated_departure_utc'))}\n" + ("Flags: " + flags + "\n" if flags else ""))
+                    nexttrain.append(f"{'Plat: ' + train['platform_number'] + '.' if train['platform_number'] else ''} {nexttrains['runs'][str(train['run_id'])]['vehicle_descriptor']['description'] if  str(train['run_id']) in nexttrains['runs'] and nexttrains['runs'][str(train['run_id'])]['vehicle_descriptor'] and nexttrains['runs'][str(train['run_id'])]['vehicle_descriptor']['description'] else ''} \nTo: {nexttrains['runs'][str(train['run_id'])]['destination_name']}\nScheduled to leave at: {train['scheduled_departure_utc'].strftime('%I:%M%p')}. ETA: {(str(int(((train.get('estimated_departure_utc') - datetime.datetime.now().astimezone(pytz.timezone('Australia/Melbourne'))).total_seconds()/60))) + ' minutes' if type(train.get('estimated_departure_utc')) == datetime.datetime else train.get('estimated_departure_utc'))}\n" + ("Flags: " + flags + "\n" if flags else ""))
                 elif traincounter >= 3:
                     break
             if len(nexttrain) > 0:
@@ -263,12 +264,12 @@ class TrainCommands(commands.Cog):
             for train in nexttrains['departures']:
                 if train['direction_id'] == directions['direction_id'] and traincounter < 3:
                     traincounter += 1
-                    train['scheduled_departure_utc'] = (datetime.datetime.strptime(train['scheduled_departure_utc'],'%Y-%m-%dT%H:%M:%SZ') + datetime.timedelta(hours=10))
+                    train['scheduled_departure_utc'] = pytz.timezone("Etc/UTC").localize(datetime.datetime.strptime(train['scheduled_departure_utc'],'%Y-%m-%dT%H:%M:%SZ')).astimezone(pytz.timezone('Australia/Melbourne'))
                     try:
-                        train['estimated_departure_utc'] = (datetime.datetime.strptime(train['estimated_departure_utc'],'%Y-%m-%dT%H:%M:%SZ') + datetime.timedelta(hours=10))
+                        train['estimated_departure_utc'] = pytz.timezone("Etc/UTC").localize(datetime.datetime.strptime(train['estimated_departure_utc'],'%Y-%m-%dT%H:%M:%SZ')).astimezone(pytz.timezone('Australia/Melbourne'))
                     except TypeError:
                         pass
-                    nexttrain.append(f"{'Plat: ' + train['platform_number'] + '.' if train['platform_number'] else ''} {nexttrains['runs'][str(train['run_id'])]['vehicle_descriptor']['description'] if  str(train['run_id']) in nexttrains['runs'] and nexttrains['runs'][str(train['run_id'])]['vehicle_descriptor'] and nexttrains['runs'][str(train['run_id'])]['vehicle_descriptor']['description'] else ''} \nTo: {nexttrains['runs'][str(train['run_id'])]['destination_name']}\nScheduled to leave at: {train['scheduled_departure_utc'].strftime('%I:%M%p')}. ETA: {(str(relativedelta(train.get('estimated_departure_utc'), datetime.datetime.now()).minutes) + ' minutes' if type(train.get('estimated_departure_utc')) == datetime.datetime else train.get('estimated_departure_utc'))}\n")
+                    nexttrain.append(f"{'Plat: ' + train['platform_number'] + '.' if train['platform_number'] else ''} {nexttrains['runs'][str(train['run_id'])]['vehicle_descriptor']['description'] if  str(train['run_id']) in nexttrains['runs'] and nexttrains['runs'][str(train['run_id'])]['vehicle_descriptor'] and nexttrains['runs'][str(train['run_id'])]['vehicle_descriptor']['description'] else ''} \nTo: {nexttrains['runs'][str(train['run_id'])]['destination_name']}\nScheduled to leave at: {train['scheduled_departure_utc'].strftime('%I:%M%p')}. ETA: {(str(int((train.get('estimated_departure_utc') - datetime.datetime.now().astimezone(pytz.timezone('Australia/Melbourne')).total_seconds()/60))) + ' minutes' if type(train.get('estimated_departure_utc')) == datetime.datetime else train.get('estimated_departure_utc'))}\n")
                 elif traincounter >= 3:
                     break
             if len(nexttrain) > 0:
@@ -355,7 +356,7 @@ class TrainCommands(commands.Cog):
         for j in range(1,18):
             if j != 10:
                 messagerouteid = j
-                disruptionsmsg = discord.Embed(name="Disruptions", description=self.bot.routes[str(messagerouteid)]["route_name"], timestamp=datetime.datetime.now() - datetime.timedelta(hours=10), color=3447003)
+                disruptionsmsg = discord.Embed(name="Disruptions", description=self.bot.routes[str(messagerouteid)]["route_name"], timestamp=datetime.datetime.now(), color=3447003)
                 PTV.disruptions_to_embed(disruptionsmsg, self.bot.disruptions[str(messagerouteid)], messagerouteid, self.bot)
                 disruptionsmsg.set_footer(icon_url=self.bot.user.avatar_url, text=f'Last Disruption Update ')
                 disruptionchannelslist.append((await self.bot.get_channel(int(channel)).send(embed=disruptionsmsg)).id)
