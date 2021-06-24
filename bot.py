@@ -143,7 +143,7 @@ async def disruptions_task():
                         # if not channel in channelstodelete:
                         #     channelstodelete.append(channel)
                         continue
-                    await updatedtime.edit(content = f"Last Checked for Disruptions at {(datetime.datetime.now()).strftime('%I:%M%p %d %b %Y')}\nThe side bar will be yellow if a Planned Work is currently active.\nSource: Licensed from Public Transport Victoria under a Creative Commons Attribution 4.0 International Licence.\nBe sure to join my discord server for official VPTBot support/feedback! https://discord.gg/KEhCS8U")
+                    await updatedtime.edit(content = f"Last Checked for Disruptions at {(datetime.datetime.now().astimezone(pytz.timezone('Australia/Melbourne'))).strftime('%I:%M%p %d %b %Y')}\nThe side bar will be yellow if a Planned Work is currently active.\nSource: Licensed from Public Transport Victoria under a Creative Commons Attribution 4.0 International Licence.\nBe sure to join my discord server for official VPTBot support/feedback! https://discord.gg/KEhCS8U")
             # for channel in channelstodelete:
             #     del disruptionchannels[channel]
             # with open('./InfoFiles/disruptionchannels.json', 'r') as f:
