@@ -360,7 +360,7 @@ class TrainCommands(commands.Cog):
                 PTV.disruptions_to_embed(disruptionsmsg, self.bot.disruptions[str(messagerouteid)], messagerouteid, self.bot)
                 disruptionsmsg.set_footer(icon_url=self.bot.user.avatar_url, text=f'Last Disruption Update ')
                 disruptionchannelslist.append((await self.bot.get_channel(int(channel)).send(embed=disruptionsmsg)).id)
-        disruptionchannelslist.append((await self.bot.get_channel(int(channel)).send(f"Last Checked for Disruptions at {(datetime.datetime.now()).strftime('%I:%M%p %d %b %Y')}\nThe side bar will be yellow if a Planned Work is currently active.\nSource: Licensed from Public Transport Victoria under a Creative Commons Attribution 4.0 International Licence.\nBe sure to join my discord server for official VPTBot support/feedback! https://discord.gg/KEhCS8U")).id)
+        disruptionchannelslist.append((await self.bot.get_channel(int(channel)).send(f"Last Checked for Disruptions at {(datetime.datetime.now().astimezone(pytz.timezone('Australia/Melbourne'))).strftime('%I:%M%p %d %b %Y')}\nThe side bar will be yellow if a Planned Work is currently active.\nSource: Licensed from Public Transport Victoria under a Creative Commons Attribution 4.0 International Licence.\nBe sure to join my discord server for official VPTBot support/feedback! https://discord.gg/KEhCS8U")).id)
         DATABASE_URL = os.environ['DATABASE_URL']
         conn = psycopg2.connect(DATABASE_URL, sslmode='require')
         cur = conn.cursor()
