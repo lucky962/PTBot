@@ -16,6 +16,7 @@ from classes.PTVFormatter import PTVFormatter
 import sys, traceback
 
 debug_mode = False
+logging.basicConfig(level=os.environ['LOGGING_LEVEL'])
 
 if debug_mode:
     TOKEN = os.environ['VPTBOT_DEVELOPMENT']
