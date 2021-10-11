@@ -132,6 +132,8 @@ async def disruptions_task():
                             # if not channel in channelstodelete:
                             #     channelstodelete.append(channel)
                             continue
+                        except discord.errors.NotFound:
+                            continue
                         try:
                             await disruptionmsgobj.edit(content = "", embed = disruptionsmsg)
                         except discord.errors.HTTPException:
