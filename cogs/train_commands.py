@@ -123,7 +123,7 @@ class TrainCommands(commands.Cog):
         disruptionsmsng.set_author(name='VPT Bot', icon_url=self.bot.user.avatar_url)
         if station['route_type'] == 0:
             embed.title = "Next Trains"
-            embed.description = f"Trains departing from {station['stop_name']}"
+            embed.description = f"Trains departing from {station['stop_name']}.\nNote: Train Types are sourced from ptv however seem to be quite inaccurate in some cases. They may or may not be accurate."
             embed.colour = 0x0072ce
             disruptionsmsng.colour = 0x0072ce
             TransportIcon = discord.File("./src/Icons/Metro.png", filename="Metro.png")
@@ -278,7 +278,7 @@ class TrainCommands(commands.Cog):
         disruptionsmsng.set_author(name='VPT Bot', icon_url=self.bot.user.avatar_url)
         if station['route_type'] == 0:
             embed.title = "Next Trains"
-            embed.description = f"Trains departing from {station['stop_name']}"
+            embed.description = f"Trains departing from {station['stop_name']}.\nNote: Train Types are sourced from ptv however seem to be quite inaccurate in some cases. They may or may not be accurate."
             embed.colour = 0x0072ce
             disruptionsmsng.colour = 0x0072ce
             TransportIcon = discord.File("./src/Icons/Metro.png", filename="Metro.png")
