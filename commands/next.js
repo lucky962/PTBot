@@ -1,4 +1,9 @@
 const { SlashCommandBuilder } = require('@discordjs/builders');
+const devId = process.env.PTV_DEV_ID;
+const apiKey = process.env.PTV_DEV_KEY;
+const ptvFormatter = require('../functions/PTVFormatter');
+
+let ptv = new ptvFormatter(devId, apiKey);
 
 module.exports = {
 	data: new SlashCommandBuilder()
@@ -21,9 +26,10 @@ module.exports = {
 				.setDescription('How many minutes ahead do you want to look?')),
 				
 	async execute(interaction) {
+		await interaction.deferReply();
 
-        const departures = await //todo: add response for next command
+		stops = await ptv.searchToMenu(interaction.options.getString('station'), [0,1,2,3,4]); //todo: add route_type options
 
-		await interaction.reply(departures);
+		await interaction.editReply({content: 'Which station would you like?', components: [stops]});
 	},
 };
