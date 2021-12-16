@@ -28,8 +28,17 @@ module.exports = {
 	async execute(interaction) {
 		await interaction.deferReply();
 
-		stops = await ptv.searchToMenu(interaction.options.getString('station'), [0,1,2,3,4]); //todo: add route_type options
+		stops = await ptv.searchToMenu(interaction.options.getString('station'), ((interaction.options.getString('route_type') == null) ? [0,1,2,3,4] : [interaction.options.getString('route_type')])); //todo: add route_type options
 
 		await interaction.editReply({content: 'Which station would you like?', components: [stops]});
 	},
+
+	async updateDepartures(interaction) {
+		await interaction.deferUpdate();
+		
+		departures = await ptv.stopToDeparturesEmbed(interaction.values[0].substring(1), interaction.values[0][0])
+
+		await interaction.editReply(departures)
+	}
+
 };

@@ -1,5 +1,6 @@
 const fs = require('fs');
 const { Client, Collection, Intents } = require('discord.js');
+const next = require('./commands/next');
 const token = process.env.VPTBOT;
 
 const client = new Client({ intents: [Intents.FLAGS.GUILDS] });
@@ -33,5 +34,16 @@ client.on('interactionCreate', async interaction => {
 	}
 });
 
-console.log(token);
+client.on('interactionCreate', async interaction => {
+	if (!interaction.isSelectMenu()) return;
+	if (interaction.customId === 'stop_select') {
+		try {
+			await next.updateDepartures(interaction)
+		} catch (error) {
+			console.error(error);
+			await interaction.reply({ content: 'There was an error while executing this command!', ephemeral: true });
+		}
+	}
+});
+
 client.login(token);

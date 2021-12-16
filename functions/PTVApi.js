@@ -12,6 +12,7 @@ class ptvClient {
         const query = `${method}${separator}devid=${this.devId}`;
         const signature = crypto.createHmac('sha1', this.apiKey).update(query).digest('hex');
         const requestUrl = `https://timetableapi.ptv.vic.gov.au${query}&signature=${signature}`;
+        console.log(requestUrl)
         const response = await fetch(requestUrl);
 
         if (response.status !== 200 && response.status !== 400 && response.status !== 403)
@@ -34,6 +35,13 @@ class ptvClient {
 
         const searchResponse = await this.makeAPIRequestAsync(method)
         return searchResponse
+    }
+
+    async getDepartures(stop_id, route_type) {
+        const method = `/v3/departures/route_type/${route_type}/stop/${stop_id}?max_results=3&expand=all`;
+
+        const departureResults = await this.makeAPIRequestAsync(method)
+        return departureResults
     }
 }
 
