@@ -1,6 +1,10 @@
 const { MessageActionRow, MessageSelectMenu, MessageEmbed, DiscordAPIError, MessageAttachment } = require('discord.js');
 const ptvApi = require('../functions/PTVApi');
 
+const fs = require('fs');
+
+const avatar_url = 'https://cdn.discordapp.com/avatars/503096810961764364/f89dad593aa8635ccddd3d364ad9c46a.png'
+
 class ptvFormatter{
     emojiRoute = [
         {name: "Metro", id: "771920140207259659"},
@@ -65,8 +69,6 @@ class ptvFormatter{
     async stopToDeparturesEmbed(stop_id, route_type) {
         
         const departure_results = await this.ptvClient.getDepartures(stop_id, route_type);
-
-        const avatar_url = 'https://cdn.discordapp.com/avatars/503096810961764364/f89dad593aa8635ccddd3d364ad9c46a.png'
 
         // Sort Departures into dictionary with key direction_id and value being a list of departures with that direction id
 
@@ -142,6 +144,72 @@ Flags:${flags}`
         const departuresMessage = {content: 'Departures:', embeds: [departuresEmbed, disruptionsEmbed], files: [thumbnail]}
 
         return departuresMessage
+    }
+
+    async getDisruptions() {
+        
+        const disruptions_results = await this.ptvClient.getDisruptions();
+
+        var disruptions = {1:{}, 2:{},3:{},4:{},5:{},6:{},7:{},8:{},9:{},10:{},11:{},12:{},13:{},14:{},15:{},16:{},17:{}};
+
+        for (var disruption in disruptions) {
+            disruptions[disruption] = {"Part suspended" : [],
+            "Major Delays" : [], 
+            "Minor Delays" : [], 
+            "Planned Works" : [], 
+            "Planned Closure" : [], 
+            "Service Information" : []}
+        }
+
+        for (var disruption of disruptions_results['disruptions']['metro_train']) {
+            for (var route of disruption['routes']) {
+                disruptions[route['route_id']][disruption['disruption_type']].push(disruption);
+                // console.log('ADD ROUTE NAME' + route['route_name'])
+                // disruptions[route['route_id']]['route_name'] = route['route_name'];
+            }
+        }
+
+        const disruptionstxt = JSON.stringify(disruptions);
+
+        fs.writeFile('./InfoFiles/disruptions.json', disruptionstxt, (err) => {
+            if (err) {
+                console.log(err);
+            }
+        })
+
+        return disruptions
+    }
+
+    async disruptionsToEmbed(disruptions) {
+
+        const routes = await this.ptvClient.getRoutes();
+
+        var disruptionsEmbeds = [] 
+
+        for (var route of routes['routes']) {
+
+            var disruptionEmbed = new MessageEmbed()
+            .setTitle(route['route_name'])
+            .setFooter('Source: Licensed from Public Transport Victoria under a Creative Commons Attribution 4.0 International Licence.', avatar_url)
+
+            for (var disruption_type in disruptions[route['route_id']]) {
+                if (disruptions[route['route_id']][disruption_type].length !== 0) {
+                    var disruptionsTxt = '';
+                    for (var disruption in disruptions[route['route_id']][disruption_type]) {
+                        disruptionsTxt = disruptionsTxt + `[${disruptions[route['route_id']][disruption_type][disruption]['title']}](${disruptions[route['route_id']][disruption_type][disruption]['url']})\n`
+                    }
+                    if (disruptionsTxt.length <= 1024) {
+                        disruptionEmbed.addField(disruption_type, disruptionsTxt)
+                    } else {
+                        disruptionEmbed.addField(disruption_type, "Too many disruptions")
+                    }
+                }
+            }
+
+            disruptionsEmbeds.push(disruptionEmbed);
+        }
+
+        return disruptionsEmbeds
     }
 }
 

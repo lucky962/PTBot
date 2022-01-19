@@ -43,6 +43,20 @@ class ptvClient {
         const departureResults = await this.makeAPIRequestAsync(method)
         return departureResults
     }
+
+    async getDisruptions() {
+        const method = `/v3/disruptions?route_types=0`;
+
+        const disruptionsResponse = await this.makeAPIRequestAsync(method)
+        return disruptionsResponse
+    }
+
+    async getRoutes() {
+        const method = `/v3/routes?route_types=0`;
+
+        const routesResponse = await this.makeAPIRequestAsync(method)
+        return routesResponse
+    }
 }
 
 module.exports = ptvClient;
