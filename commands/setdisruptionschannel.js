@@ -52,7 +52,12 @@ Be sure to join my discord server for official VPTBot support/feedback! https://
 
 		console.log(messages)
 
-		const pgclient = new Client({connectionString: connectionString})
+		const pgclient = new Client({
+			connectionString: connectionString,
+			ssl: {
+				rejectUnauthorized: false
+			}
+		})
 		await pgclient.connect()
 		await pgclient.query('DELETE FROM disruption_channels WHERE channel_id = $1;', [channelId])
 		await pgclient.query(`INSERT INTO disruption_channels ("channel_id", "1", "2", "3", "4", "5", "6", "7", "8", "9", "11", "12", "13", "14", "15", "16", "17", "18") VALUES(${channelId}, ${messages.join(', ')})`)
