@@ -22,7 +22,18 @@ class ptvFormatter{
         "#ff8200"
     ]
 
-
+    
+    ServiceStatusColours = {
+        "Good Service": 0x97d700, 
+        "Service Information": 0xd3ecf4, 
+        "Major Delays": 0xef4135, 
+        "Minor Delays": 0xe87800, 
+        "Planned Works": 0xffd500, 
+        "Planned Closure": 0xffd500, 
+        "Part suspended": 0x1f1f1f,
+        "Other": 0x97d700
+    }
+        
     // Route Type to English Translation with singular and plural versions
     RouteTypeTranslate = [
         ["Metro","Metro Trains"],
@@ -163,19 +174,19 @@ Flags:${flags}`
 
         for (var disruption of disruptions_results['disruptions']['metro_train']) {
             for (var route of disruption['routes']) {
+                if (!disruptions[route['route_id']]) {
+                    disruptions[route['route_id']] = {"Part suspended" : [],
+                    "Major Delays" : [], 
+                    "Minor Delays" : [], 
+                    "Planned Works" : [], 
+                    "Planned Closure" : [], 
+                    "Service Information" : []}
+                }
                 disruptions[route['route_id']][disruption['disruption_type']].push(disruption);
                 // console.log('ADD ROUTE NAME' + route['route_name'])
                 // disruptions[route['route_id']]['route_name'] = route['route_name'];
             }
         }
-
-        const disruptionstxt = JSON.stringify(disruptions);
-
-        fs.writeFile('./InfoFiles/disruptions.json', disruptionstxt, (err) => {
-            if (err) {
-                console.log(err);
-            }
-        })
 
         return disruptions
     }
@@ -184,29 +195,38 @@ Flags:${flags}`
 
         const routes = await this.ptvClient.getRoutes();
 
-        var disruptionsEmbeds = [] 
+        var disruptionsEmbeds = {};
 
         for (var route of routes['routes']) {
+            if ([1, 2, 3, 4, 5, 6, 7, 8, 9, 11, 12, 13, 14, 15, 16, 17].includes(route['route_id'])) {
+                var disruptionEmbed = new MessageEmbed()
+                .setTitle(route['route_name'])
+                .setFooter('Last Disruption Update', avatar_url)
 
-            var disruptionEmbed = new MessageEmbed()
-            .setTitle(route['route_name'])
-            .setFooter('Source: Licensed from Public Transport Victoria under a Creative Commons Attribution 4.0 International Licence.', avatar_url)
+                if (route['route_service_status']['description'] in this.ServiceStatusColours) {
+                    disruptionEmbed.setColor(this.ServiceStatusColours[route['route_service_status']['description']])
+                }
 
-            for (var disruption_type in disruptions[route['route_id']]) {
-                if (disruptions[route['route_id']][disruption_type].length !== 0) {
-                    var disruptionsTxt = '';
-                    for (var disruption in disruptions[route['route_id']][disruption_type]) {
-                        disruptionsTxt = disruptionsTxt + `[${disruptions[route['route_id']][disruption_type][disruption]['title']}](${disruptions[route['route_id']][disruption_type][disruption]['url']})\n`
-                    }
-                    if (disruptionsTxt.length <= 1024) {
-                        disruptionEmbed.addField(disruption_type, disruptionsTxt)
-                    } else {
-                        disruptionEmbed.addField(disruption_type, "Too many disruptions")
+                if (route['route_service_status']['description'] == 'Good Service') {
+                    disruptionEmbed.addField('Good Service', 'Trains are currently running on time to five minutes.')
+                }
+
+                for (var disruption_type in disruptions[route['route_id']]) {
+                    if (disruptions[route['route_id']][disruption_type].length !== 0) {
+                        var disruptionsTxt = '';
+                        for (var disruption in disruptions[route['route_id']][disruption_type]) {
+                            disruptionsTxt = disruptionsTxt + `[${disruptions[route['route_id']][disruption_type][disruption]['title']}](${disruptions[route['route_id']][disruption_type][disruption]['url']})\n`
+                        }
+                        if (disruptionsTxt.length <= 1024) {
+                            disruptionEmbed.addField(disruption_type, disruptionsTxt)
+                        } else {
+                            disruptionEmbed.addField(disruption_type, "Too many disruptions")
+                        }
                     }
                 }
-            }
 
-            disruptionsEmbeds.push(disruptionEmbed);
+                disruptionsEmbeds[route['route_id']] = disruptionEmbed;
+            }
         }
 
         return disruptionsEmbeds
