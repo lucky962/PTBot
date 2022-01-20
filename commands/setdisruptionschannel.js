@@ -3,6 +3,7 @@ const devId = process.env.PTV_DEV_ID;
 const apiKey = process.env.PTV_DEV_KEY;
 const ptvFormatter = require('../functions/PTVFormatter');
 const { Client } = require('pg')
+const connectionString = process.env.DATABASE_URL
 
 let ptv = new ptvFormatter(devId, apiKey);
 
@@ -51,7 +52,7 @@ Be sure to join my discord server for official VPTBot support/feedback! https://
 
 		console.log(messages)
 
-		const pgclient = new Client()
+		const pgclient = new Client({connectionString})
 		await pgclient.connect()
 		await pgclient.query('DELETE FROM disruption_channels WHERE channel_id = $1;', [channelId])
 		await pgclient.query(`INSERT INTO disruption_channels ("channel_id", "1", "2", "3", "4", "5", "6", "7", "8", "9", "11", "12", "13", "14", "15", "16", "17", "18") VALUES(${channelId}, ${messages.join(', ')})`)

@@ -2,6 +2,7 @@ const { SlashCommandBuilder } = require('@discordjs/builders');
 const { MessageEmbed } = require('discord.js');
 
 const pg = require('pg');
+const connectionString = process.env.DATABASE_URL
 
 const avatar_url = 'https://cdn.discordapp.com/avatars/503096810961764364/f89dad593aa8635ccddd3d364ad9c46a.png'
 
@@ -12,7 +13,7 @@ module.exports = {
 
 	async execute(interaction) {
                 var prefixes = {}
-                const pgclient = new pg.Client();
+                const pgclient = new pg.Client({connectionString});
                 await pgclient.connect()
                 var prefixesResults = await pgclient.query('SELECT * FROM public.prefixes;')
                 for (var prefix of prefixesResults['rows']) {
