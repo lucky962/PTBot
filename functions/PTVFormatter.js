@@ -86,7 +86,6 @@ class ptvFormatter{
         var departures = {}
 
         for (var departure of departure_results['departures']) {
-            console.log(departure)
             if (!departures[departure['direction_id']]) {
                 departures[departure['direction_id']] = [];
             }
@@ -130,8 +129,6 @@ Scheduled: <t:${(new Date(departure['scheduled_departure_utc'])).getTime() / 100
 ETA: ${(departure['estimated_departure_utc']) ? ('<t:' + (new Date(departure['estimated_departure_utc'])).getTime() / 1000 + ':R>') : 'None'}
 Flags:${flags}`
             }
-            console.log(departure_results['directions'][direction]['direction_name'])
-            console.log(direction_text)
             departuresEmbed.addField(departure_results['directions'][direction]['direction_name'], direction_text, true)
         }
         
