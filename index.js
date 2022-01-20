@@ -127,7 +127,9 @@ client.on('interactionCreate', async interaction => {
 			await next.updateDepartures(interaction)
 		} catch (error) {
 			console.error(error);
-			await interaction.editReply({ content: 'There was an error while executing this command!'});
+			var lucky962 = await client.users.fetch('244596682531143680')
+			await lucky962.send(JSON.stringify(error).slice(0,2000))
+			await interaction.editReply({ content: 'Sorry, there was an error while executing this command. This has been reported to lucky962, and will be fixed ASAP.', embeds:[]});
 		}
 	}
 });

@@ -23,7 +23,7 @@ module.exports = {
 				.addChoice('Night Bus', '4'))
 		.addStringOption(option =>
 			option.setName('minutes')
-				.setDescription('How many minutes ahead do you want to look?')),
+				.setDescription('How many minutes ahead do you want to look? (COMING SOON)')),
 				
 	async execute(interaction) {
 		await interaction.deferReply();

@@ -135,9 +135,22 @@ Flags:${flags}`
         // Convert Disruptions into an Embed
 
         var disruptions = '';
+        
+        var disruptionsEmbed = new MessageEmbed()
+            .setTitle('Potential Disruptions')
+            .setColor(this.PTColours[route_type])
+            .setDescription('Potential Disruptions that might affect ' + departure_results['stops'][stop_id]['stop_name'])
+            .setAuthor('VPT Bot', avatar_url)
+            .setThumbnail('https://raw.githubusercontent.com/lucky962/PTBot/main/src/Icons/' + this.RouteTypeTranslate[route_type][0] + '.png')
+            .setFooter('Source: Licensed from Public Transport Victoria under a Creative Commons Attribution 4.0 International Licence.', avatar_url)
 
         for (var disruption in departure_results['disruptions']) {
-            disruptions += `[${departure_results['disruptions'][disruption]['title']}](${departure_results['disruptions'][disruption]['url']})\n`
+            if (disruptions.length + `[${departure_results['disruptions'][disruption]['title']}](${departure_results['disruptions'][disruption]['url']})\n`.length <= 1024) {
+                disruptions += `[${departure_results['disruptions'][disruption]['title']}](${departure_results['disruptions'][disruption]['url']})\n`
+            } else {
+                disruptionEmbed.addField('Potential Disruptions', disruptions);
+                disruptions = '';
+            }
         }
 
         if (disruptions == '') {
@@ -147,30 +160,7 @@ Flags:${flags}`
             return departuresMessage
         }
 
-        if (disruptions.length > 1024) {
-            var disruptionsEmbed = new MessageEmbed()
-                .setTitle('Potential Disruptions')
-                .setColor(this.PTColours[route_type])
-                .setDescription('Potential Disruptions that might affect ' + departure_results['stops'][stop_id]['stop_name'])
-                .setAuthor('VPT Bot', avatar_url)
-                .setThumbnail('https://raw.githubusercontent.com/lucky962/PTBot/main/src/Icons/' + this.RouteTypeTranslate[route_type][0] + '.png')
-                .setFooter('Source: Licensed from Public Transport Victoria under a Creative Commons Attribution 4.0 International Licence.', avatar_url)
-                .addField('Potential Disruptions', 'Too many disruptions')
-    
-            const departuresMessage = {content: 'Departures:', embeds: [departuresEmbed, disruptionsEmbed]}
-    
-            return departuresMessage
-            
-        }
-
-        var disruptionsEmbed = new MessageEmbed()
-            .setTitle('Potential Disruptions')
-            .setColor(this.PTColours[route_type])
-            .setDescription('Potential Disruptions that might affect ' + departure_results['stops'][stop_id]['stop_name'])
-            .setAuthor('VPT Bot', avatar_url)
-            .setThumbnail('https://raw.githubusercontent.com/lucky962/PTBot/main/src/Icons/' + this.RouteTypeTranslate[route_type][0] + '.png')
-            .setFooter('Source: Licensed from Public Transport Victoria under a Creative Commons Attribution 4.0 International Licence.', avatar_url)
-            .addField('Potential Disruptions', disruptions)
+        disruptionsEmbed.addField('Potential Disruptions', disruptions)
 
         const departuresMessage = {content: 'Departures:', embeds: [departuresEmbed, disruptionsEmbed]}
 
@@ -235,12 +225,12 @@ Flags:${flags}`
                     if (disruptions[route['route_id']][disruption_type].length !== 0) {
                         var disruptionsTxt = '';
                         for (var disruption in disruptions[route['route_id']][disruption_type]) {
-                            disruptionsTxt = disruptionsTxt + `[${disruptions[route['route_id']][disruption_type][disruption]['title']}](${disruptions[route['route_id']][disruption_type][disruption]['url']})\n`
-                        }
-                        if (disruptionsTxt.length <= 1024) {
-                            disruptionEmbed.addField(disruption_type, disruptionsTxt)
-                        } else {
-                            disruptionEmbed.addField(disruption_type, "Too many disruptions")
+                            if (disruptionsTxt.length + `[${disruptions[route['route_id']][disruption_type][disruption]['title']}](${disruptions[route['route_id']][disruption_type][disruption]['url']})\n`.length <= 1024) {
+                                disruptionsTxt = disruptionsTxt + `[${disruptions[route['route_id']][disruption_type][disruption]['title']}](${disruptions[route['route_id']][disruption_type][disruption]['url']})\n`
+                            } else {
+                                disruptionEmbed.addField(disruption_type, disruptionsTxt);
+                                disruptionsTxt = '';
+                            }
                         }
                     }
                 }
