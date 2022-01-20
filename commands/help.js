@@ -13,7 +13,7 @@ module.exports = {
 
 	async execute(interaction) {
                 var prefixes = {}
-                const pgclient = new pg.Client({connectionString});
+                const pgclient = new pg.Client({connectionString: connectionString});
                 await pgclient.connect()
                 var prefixesResults = await pgclient.query('SELECT * FROM public.prefixes;')
                 for (var prefix of prefixesResults['rows']) {

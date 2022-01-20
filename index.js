@@ -8,7 +8,7 @@ const token = process.env.VPTBOT;
 const devId = process.env.PTV_DEV_ID;
 const apiKey = process.env.PTV_DEV_KEY;
 const pg = require('pg');
-const connectionString = process.env.DATABASE_URL
+const connectionString = process.env.DATABASE_URL + '?sslmode=require'
 const avatar_url = 'https://cdn.discordapp.com/avatars/503096810961764364/f89dad593aa8635ccddd3d364ad9c46a.png';
 
 const client = new Client({ intents: [Intents.FLAGS.GUILDS, Intents.FLAGS.GUILD_MESSAGES] });
@@ -29,7 +29,7 @@ for (const file of commandFiles) {
 client.once('ready', async () => {
 	// const channel = await client.channels.fetch('558929696570736660')
 
-	const pgclient = new pg.Client({connectionString});
+	const pgclient = new pg.Client({connectionString: connectionString});
 	await pgclient.connect()
 	var prefixesResults = await pgclient.query('SELECT * FROM public.prefixes;')
 	for (var prefix of prefixesResults['rows']) {
@@ -42,7 +42,7 @@ client.once('ready', async () => {
 	}
 	console.log('Ready!');
 	while (true) {
-		const pgclient = new pg.Client({connectionString});
+		const pgclient = new pg.Client({connectionString: connectionString});
 		await pgclient.connect()
 		var channels = await pgclient.query('SELECT * FROM disruption_channels;')
 		await pgclient.end()
@@ -159,7 +159,7 @@ client.on('messageCreate', async message => {
 		} else if (command.startsWith('setprefix ')) {
 			const prefix = command.replace('setprefix ','');
 			if (prefix.length < 6) {
-				const pgclient = new pg.Client({connectionString})
+				const pgclient = new pg.Client({connectionString: connectionString})
 				await pgclient.connect()
 				await pgclient.query('DELETE FROM prefixes WHERE guild_id = $1;', [message.guildId])
 				await pgclient.query(`INSERT INTO prefixes (guild_id, prefix) VALUES($1, $2)`,[message.guildId, prefix])
@@ -230,7 +230,7 @@ client.on('messageCreate', async message => {
 	
 			console.log(messages)
 	
-			const pgclient = new pg.Client({connectionString})
+			const pgclient = new pg.Client({connectionString: connectionString})
 			await pgclient.connect()
 			await pgclient.query('DELETE FROM disruption_channels WHERE channel_id = $1;', [channelId])
 			await pgclient.query(`INSERT INTO disruption_channels ("channel_id", "1", "2", "3", "4", "5", "6", "7", "8", "9", "11", "12", "13", "14", "15", "16", "17", "18") VALUES(${channelId}, ${messages.join(', ')})`)
