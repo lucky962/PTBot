@@ -95,7 +95,7 @@ class ptvFormatter{
 
         // Convert departures into an Embed
 
-        const thumbnail = new MessageAttachment('./src/Icons/' + this.RouteTypeTranslate[route_type][0] + '.png')
+        // const thumbnail = new MessageAttachment('./src/Icons/' + this.RouteTypeTranslate[route_type][0] + '.png')
 
         var departuresEmbed = new MessageEmbed()
             .setTitle('Next ' + this.RouteTypeTranslate[route_type][0])
@@ -105,7 +105,7 @@ class ptvFormatter{
 Train Types are sourced from ptv however seem to be quite inaccurate in some cases. They may or may not be accurate.`)
             .setAuthor('VPT Bot', avatar_url)
             // .attachFiles(thumbnail)
-            .setThumbnail('attachment://' + this.RouteTypeTranslate[route_type][0] + '.png')
+            .setThumbnail('https://raw.githubusercontent.com/lucky962/PTBot/main/src/Icons/' + this.RouteTypeTranslate[route_type][0] + '.png')
             .setFooter('Source: Licensed from Public Transport Victoria under a Creative Commons Attribution 4.0 International Licence.', avatar_url)
 
         // console.log(departures)
@@ -143,16 +143,39 @@ Flags:${flags}`
             disruptions += `[${departure_results['disruptions'][disruption]['title']}](${departure_results['disruptions'][disruption]['url']})\n`
         }
 
+        if (disruptions == '') {
+
+            const departuresMessage = {content: 'Departures:', embeds: [departuresEmbed]}
+    
+            return departuresMessage
+        }
+
+        if (disruptions.length > 1024) {
+            var disruptionsEmbed = new MessageEmbed()
+                .setTitle('Potential Disruptions')
+                .setColor(this.PTColours[route_type])
+                .setDescription('Potential Disruptions that might affect ' + departure_results['stops'][stop_id]['stop_name'])
+                .setAuthor('VPT Bot', avatar_url)
+                .setThumbnail('https://raw.githubusercontent.com/lucky962/PTBot/main/src/Icons/' + this.RouteTypeTranslate[route_type][0] + '.png')
+                .setFooter('Source: Licensed from Public Transport Victoria under a Creative Commons Attribution 4.0 International Licence.', avatar_url)
+                .addField('Potential Disruptions', 'Too many disruptions')
+    
+            const departuresMessage = {content: 'Departures:', embeds: [departuresEmbed, disruptionsEmbed]}
+    
+            return departuresMessage
+            
+        }
+
         var disruptionsEmbed = new MessageEmbed()
             .setTitle('Potential Disruptions')
             .setColor(this.PTColours[route_type])
             .setDescription('Potential Disruptions that might affect ' + departure_results['stops'][stop_id]['stop_name'])
             .setAuthor('VPT Bot', avatar_url)
-            .setThumbnail('attachment://' + this.RouteTypeTranslate[route_type][0] + '.png')
+            .setThumbnail('https://raw.githubusercontent.com/lucky962/PTBot/main/src/Icons/' + this.RouteTypeTranslate[route_type][0] + '.png')
             .setFooter('Source: Licensed from Public Transport Victoria under a Creative Commons Attribution 4.0 International Licence.', avatar_url)
             .addField('Potential Disruptions', disruptions)
 
-        const departuresMessage = {content: 'Departures:', embeds: [departuresEmbed, disruptionsEmbed], files: [thumbnail]}
+        const departuresMessage = {content: 'Departures:', embeds: [departuresEmbed, disruptionsEmbed]}
 
         return departuresMessage
     }
