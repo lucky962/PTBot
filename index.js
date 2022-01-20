@@ -135,9 +135,9 @@ client.on('interactionCreate', async interaction => {
 client.on('messageCreate', async message => {
 	console.log(message.content)
 	console.log(!(message.guildId in prefixes))
-	console.log(message.content.toLowerCase().startsWith('pt!'))
+	console.log(message.content.startsWith(prefixes[message.guildId]))
 	if ((message.guildId in prefixes & message.content.startsWith(prefixes[message.guildId])) | ((!(message.guildId in prefixes) & message.content.toLowerCase().startsWith('pt!')))) {
-		const command = message.content.replace(prefixes[message.guildId, '']).toLowerCase().replace('pt!','');
+		const command = message.content.replace(prefixes[message.guildId], '').toLowerCase().replace('pt!','');
 		if (command.startsWith('next ')) {
 			stops = await ptv.searchToMenu(command.replace('next ',''), [0,1,2,3,4]); 
 			await message.reply({content: 'Which station would you like?', components: [stops]});
@@ -154,23 +154,41 @@ client.on('messageCreate', async message => {
 			stops = await ptv.searchToMenu(command.replace('nextvline ','').replace('nv ','').replace('vn ','').replace('vnext ','').replace('nextv ',''), [3]); 
 			await message.reply({content: 'Which station would you like?', components: [stops]});
 		} else if (command.startsWith('setprefix ')) {
-			message.reply('setprefix command coming soon');
+			const prefix = command.replace('setprefix ','');
+			if (prefix.length < 6) {
+				const pgclient = new pg.Client()
+				await pgclient.connect()
+				await pgclient.query('DELETE FROM prefixes WHERE guild_id = $1;', [message.guildId])
+				await pgclient.query(`INSERT INTO prefixes (guild_id, prefix) VALUES($1, $2)`,[message.guildId, prefix])
+				var prefixesResults = await pgclient.query('SELECT * FROM public.prefixes;')
+				for (var prefixez of prefixesResults['rows']) {
+					prefixes[prefixez['guild_id']] = prefixez['prefix']
+				}
+				await pgclient.end()
+				await message.reply('Successfully changed prefix')
+			} else {
+				await message.reply('Prefix too long, it needs to be 5 characters or less.')
+			}
 		} else if (command.startsWith('help')) {
+			if (message.guildId in prefixes) {
+				prefix = prefixes[message.guildId]
+			} else {
+				prefix = 'pt!'
+			}
 			const HelpMsg = new MessageEmbed()
 			.setTitle('Help Page')
 			.setDescription(`This is a page full of commands you can use with VPT Bot
 	NOTE: ONLY SLASH COMMANDS SUPPORT OPTIONAL ARGUMENTS
-	ALSO, discord doesn't like us using non-slash commands (one where the prefix is pt! or a custom prefix) and so they will no longer work if I get to 75 servers and it is after April 30 2022.
+	ALSO, discord doesn't like us using non-slash commands (one where the prefix is ${prefix}) and so they will no longer work if I get to 75 servers and it is after April 30 2022.
 	To read more, visit https://support-dev.discord.com/hc/en-us/articles/4404772028055 or ask in the VPTBot server :)`)
 			.setAuthor('VPT Bot', avatar_url)
 			.addField('Key', '[argument] - required argument you need to provide for the command\n<argument> - optional argument you can provide')
-			.addField('(pt! or /)help', 'Displays this help message!')
-			.addField('(pt! or /)next [station] <route_type> <minutes>', 'Shows next 3 departures per direction from a station.')
-			.addField('(pt! or /)setdisruptionschannel [channel]', 'Keeps channel specified up to date with current train disruptions.')
-			.addField('(pt! or /)invite', 'Sends invite link for the bot')
-			.addField('pt!next(train/bus/tram/vline) [station] \n(alias = (next/n)(t/b/t/v) or (t/b/t/v)(next/n)', 'Shows next 3 departures per direction from a station for a route type.')
-			.addField('pt!prefix', 'Shows your current set prefix.')
-			.addField('pt!setprefix [prefix]', 'Sets a new prefix')
+			.addField(`(${prefix} or /)help`, `Displays this help message!`)
+			.addField(`(${prefix} or /)next [station] <route_type> <minutes>`, `Shows next 3 departures per direction from a station.`)
+			.addField(`(${prefix} or /)setdisruptionschannel [channel]`, `Keeps channel specified up to date with current train disruptions.`)
+			.addField(`(${prefix} or /)invite`, `Sends invite link for the bot`)
+			.addField(`${prefix}next(train/bus/tram/vline) [station] \n(alias = (next/n)(t/b/t/v) or (t/b/t/v)(next/n)`, `Shows next 3 departures per direction from a station for a route type.`)
+			.addField(`${prefix}setprefix [prefix]`, `Sets a new prefix`)
 			.setFooter('© VPT Bot', avatar_url)
 
 			await message.reply({embeds:[HelpMsg]})
