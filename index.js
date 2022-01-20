@@ -87,21 +87,29 @@ client.once('ready', async () => {
 
 		for (var disruption in disruptionsToUpdate) {
 			for (var serverChannels of channels['rows']) {
-				var channel = await client.channels.fetch(serverChannels['channel_id'])
-				var message = await channel.messages.fetch(serverChannels[disruption])
-				disruptionsToUpdate[disruption].setTimestamp()
-				await message.edit({content:null, embeds:[disruptionsToUpdate[disruption]]})
+                try {
+                    var channel = await client.channels.fetch(serverChannels['channel_id'])
+                    var message = await channel.messages.fetch(serverChannels[disruption])
+                    disruptionsToUpdate[disruption].setTimestamp()
+                    await message.edit({content:null, embeds:[disruptionsToUpdate[disruption]]})
+                } catch (error) {
+                    console.log(error)
+                }
 			}
 		}
 
 		for (var serverChannels of channels['rows']) {
-			channel = await client.channels.fetch(serverChannels['channel_id'])
-			message = await channel.messages.fetch(serverChannels['18'])
-			await message.edit({content:`Last Checked for Disruptions at <t:${Math.round((new Date()).getTime() / 1000)}:f>
-The side bar will be yellow if a Planned Work is currently active.
-Source: Licensed from Public Transport Victoria under a Creative Commons Attribution 4.0 International Licence.
-Be sure to join my discord server for official VPTBot support/feedback! https://discord.gg/KEhCS8U`})
-		}
+            try {
+                channel = await client.channels.fetch(serverChannels['channel_id'])
+                message = await channel.messages.fetch(serverChannels['18'])
+                await message.edit({content:`Last Checked for Disruptions at <t:${Math.round((new Date()).getTime() / 1000)}:f>
+    The side bar will be yellow if a Planned Work is currently active.
+    Source: Licensed from Public Transport Victoria under a Creative Commons Attribution 4.0 International Licence.
+    Be sure to join my discord server for official VPTBot support/feedback! https://discord.gg/KEhCS8U`})
+            } catch (error) {
+                console.log(error)
+            }
+        }
 
         const disruptionstxt = JSON.stringify(disruptionsEmbeds);
 
