@@ -64,8 +64,6 @@ class ptvFormatter{
             })
         }
 
-        // console.log(stops)
-
         const menu = new MessageActionRow()
             .addComponents(
                 new MessageSelectMenu()
@@ -107,7 +105,6 @@ Train Types are sourced from ptv however seem to be quite inaccurate in some cas
             .setThumbnail('https://raw.githubusercontent.com/lucky962/PTBot/main/src/Icons/' + this.RouteTypeTranslate[route_type][0] + '.png')
             .setFooter('Source: Licensed from Public Transport Victoria under a Creative Commons Attribution 4.0 International Licence.', avatar_url)
 
-        // console.log(departures)
         for (var direction in departures) {
             var direction_text = '';
             for (var departure of departures[direction]) {
@@ -197,7 +194,6 @@ Flags:${flags}`
                     disruptions[route['route_id']][disruption['disruption_type']] = [];
                 }
                 disruptions[route['route_id']][disruption['disruption_type']].push(disruption);
-                // console.log('ADD ROUTE NAME' + route['route_name'])
                 // disruptions[route['route_id']]['route_name'] = route['route_name'];
             }
         }

@@ -50,8 +50,6 @@ The side bar will be yellow if a Planned Work is currently active.
 Source: Licensed from Public Transport Victoria under a Creative Commons Attribution 4.0 International Licence.
 Be sure to join my discord server for official VPTBot support/feedback! https://discord.gg/KEhCS8U`})).id);
 
-		console.log(messages)
-
 		const pgclient = new Client({
 			connectionString: connectionString,
 			ssl: {

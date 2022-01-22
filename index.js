@@ -56,7 +56,6 @@ client.once('ready', async () => {
 		await pgclient.connect()
 		var channels = await pgclient.query('SELECT * FROM disruption_channels;')
 		await pgclient.end()
-		// console.log(channels)
 
         const disruptions = await ptv.getDisruptions();
 
@@ -83,8 +82,6 @@ client.once('ready', async () => {
 			}
 		}
 
-		// console.log("DISRUPTIONS TO UPDATE" + JSON.stringify(disruptionsToUpdate))
-
 		for (var disruption in disruptionsToUpdate) {
 			for (var serverChannels of channels['rows']) {
                 try {
@@ -93,7 +90,6 @@ client.once('ready', async () => {
                     disruptionsToUpdate[disruption].setTimestamp()
                     await message.edit({content:null, embeds:[disruptionsToUpdate[disruption]]})
                 } catch (error) {
-                    console.log(error)
                 }
 			}
 		}
@@ -107,7 +103,6 @@ client.once('ready', async () => {
     Source: Licensed from Public Transport Victoria under a Creative Commons Attribution 4.0 International Licence.
     Be sure to join my discord server for official VPTBot support/feedback! https://discord.gg/KEhCS8U`})
             } catch (error) {
-                console.log(error)
             }
         }
 
@@ -154,9 +149,6 @@ client.on('interactionCreate', async interaction => {
 });
 
 client.on('messageCreate', async message => {
-	console.log(message.content)
-	console.log(!(message.guildId in prefixes))
-	console.log(message.content.startsWith(prefixes[message.guildId]))
 	if ((message.guildId in prefixes & message.content.startsWith(prefixes[message.guildId])) | ((!(message.guildId in prefixes) & message.content.toLowerCase().startsWith('pt!')))) {
 		const command = message.content.replace(prefixes[message.guildId], '').toLowerCase().replace('pt!','');
 		if (command.startsWith('next ')) {
@@ -250,8 +242,6 @@ client.on('messageCreate', async message => {
 	The side bar will be yellow if a Planned Work is currently active.
 	Source: Licensed from Public Transport Victoria under a Creative Commons Attribution 4.0 International Licence.
 	Be sure to join my discord server for official VPTBot support/feedback! https://discord.gg/KEhCS8U`})).id);
-	
-			console.log(messages)
 	
 			const pgclient = new pg.Client({
 				connectionString: connectionString,

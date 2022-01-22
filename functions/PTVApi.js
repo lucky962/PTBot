@@ -12,7 +12,7 @@ class ptvClient {
         const query = `${method}${separator}devid=${this.devId}`;
         const signature = crypto.createHmac('sha1', this.apiKey).update(query).digest('hex');
         const requestUrl = `https://timetableapi.ptv.vic.gov.au${query}&signature=${signature}`;
-        console.log(requestUrl)
+        // console.log(requestUrl)
         const response = await fetch(requestUrl);
 
         if (response.status !== 200 && response.status !== 400 && response.status !== 403)
