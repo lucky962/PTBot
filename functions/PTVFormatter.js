@@ -192,6 +192,10 @@ Flags:${flags}`
                     "Planned Closure" : [], 
                     "Service Information" : []}
                 }
+
+                if (!([disruption['disruption_type']] in disruption[route['route_id']])) {
+                    disruptions[route['route_id']][disruption['disruption_type']] = [];
+                }
                 disruptions[route['route_id']][disruption['disruption_type']].push(disruption);
                 // console.log('ADD ROUTE NAME' + route['route_name'])
                 // disruptions[route['route_id']]['route_name'] = route['route_name'];
