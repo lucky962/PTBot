@@ -233,9 +233,11 @@ Flags:${flags}`
                                 disruptionsTxt = disruptionsTxt + `[${disruptions[route['route_id']][disruption_type][disruption]['title']}](${disruptions[route['route_id']][disruption_type][disruption]['url']})\n`
                             } else {
                                 disruptionEmbed.addField(disruption_type, disruptionsTxt);
-                                disruptionsTxt = '';
+                                disruptionsTxt = `[${disruptions[route['route_id']][disruption_type][disruption]['title']}](${disruptions[route['route_id']][disruption_type][disruption]['url']})\n`;
                             }
                         }
+
+                        disruptionEmbed.addField(disruption_type, disruptionsTxt);
                     }
                 }
 

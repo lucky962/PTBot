@@ -41,7 +41,7 @@ module.exports = {
 		var messages = []
 
 		for (var disruptionEmbed in disruptionsEmbeds) {
-			disruptionEmbed.setTimestamp()
+			disruptionsEmbeds[disruptionEmbed].setTimestamp()
 			messages.push((await channel.send({embeds:[disruptionsEmbeds[disruptionEmbed]]})).id);
 		}
 
