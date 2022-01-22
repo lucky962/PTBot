@@ -3,6 +3,7 @@ const devId = process.env.PTV_DEV_ID;
 const apiKey = process.env.PTV_DEV_KEY;
 const ptvFormatter = require('../functions/PTVFormatter');
 const { Client } = require('pg')
+const { Permissions } = require('discord.js');
 const connectionString = process.env.DATABASE_URL
 
 let ptv = new ptvFormatter(devId, apiKey);
@@ -18,6 +19,11 @@ module.exports = {
 				
 	async execute(interaction) {
 		await interaction.deferReply();
+
+		if (!interaction.memberPermissions.has(Permissions.FLAGS.MANAGE_CHANNELS)) {
+			interaction.editReply('Sorry, you need Manage Channels Permissions to use this command.');
+			return;
+		}
 
 		const channelId = interaction.options.getString('channel').substring(2).substring(0,18)
 

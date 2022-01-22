@@ -1,7 +1,7 @@
 require('dotenv').config()
 
 const fs = require('fs');
-const { Client, Collection, Intents, MessageEmbed } = require('discord.js');
+const { Permissions, Client, Collection, Intents, MessageEmbed } = require('discord.js');
 const ptvFormatter = require('./functions/PTVFormatter');
 const next = require('./commands/next');
 const token = process.env.VPTBOT;
@@ -167,6 +167,10 @@ client.on('messageCreate', async message => {
 			stops = await ptv.searchToMenu(command.replace('nextvline ','').replace('nv ','').replace('vn ','').replace('vnext ','').replace('nextv ',''), [3]); 
 			await message.reply({content: 'Which station would you like?', components: [stops]});
 		} else if (command.startsWith('setprefix ')) {
+			if (!message.member.permissions.has(Permissions.FLAGS.MANAGE_GUILD)) {
+				message.reply('Sorry, you need Manage Server Permissions to use this command.');
+				return;
+			}
 			const prefix = command.replace('setprefix ','');
 			if (prefix.length < 6) {
 				const pgclient = new pg.Client({
