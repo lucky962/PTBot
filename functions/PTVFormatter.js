@@ -193,7 +193,7 @@ Flags:${flags}`
                     "Service Information" : []}
                 }
 
-                if (!(disruption['disruption_type'] in disruption[route['route_id']])) {
+                if (!(disruption['disruption_type'] in disruptions[route['route_id']])) {
                     disruptions[route['route_id']][disruption['disruption_type']] = [];
                 }
                 disruptions[route['route_id']][disruption['disruption_type']].push(disruption);
