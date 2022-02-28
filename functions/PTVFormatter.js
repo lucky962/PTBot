@@ -104,7 +104,7 @@ Train Types are sourced from ptv however seem to be quite inaccurate in some cas
             // .attachFiles(thumbnail)
             .setThumbnail('https://raw.githubusercontent.com/lucky962/PTBot/main/src/Icons/' + this.RouteTypeTranslate[route_type][0] + '.png')
             .setFooter('Source: Licensed from Public Transport Victoria under a Creative Commons Attribution 4.0 International Licence.', avatar_url)
-
+        
         for (var direction in departures) {
             var direction_text = '';
             for (var departure of departures[direction]) {
@@ -121,7 +121,7 @@ Train Types are sourced from ptv however seem to be quite inaccurate in some cas
                 direction_text = 
 `${direction_text}
 
-Plat: ${departure['platform_number']}
+Plat: ${departure['platform_number']}. ${(departure_results['runs'][departure['run_ref']]['vehicle_descriptor']) ? departure_results['runs'][departure['run_ref']]['vehicle_descriptor']['description'] : ""}
 Scheduled: <t:${(new Date(departure['scheduled_departure_utc'])).getTime() / 1000}:${((new Date(departure['scheduled_departure_utc'])).toDateString() == (new Date()).toDateString()) ? 't' : 'f'}>
 ETA: ${(departure['estimated_departure_utc']) ? ('<t:' + (new Date(departure['estimated_departure_utc'])).getTime() / 1000 + ':R>') : 'None'}
 Flags:${flags}`
