@@ -145,19 +145,21 @@ Flags:${flags}`
             if (disruptions.length + `[${departure_results['disruptions'][disruption]['title']}](${departure_results['disruptions'][disruption]['url']})\n`.length <= 1024) {
                 disruptions += `[${departure_results['disruptions'][disruption]['title']}](${departure_results['disruptions'][disruption]['url']})\n`
             } else {
-                disruptionEmbed.addField('Potential Disruptions', disruptions);
+                disruptionsEmbed.addField('Potential Disruptions', disruptions);
                 disruptions = '';
             }
         }
 
-        if (disruptions == '') {
+        if (disruptionsEmbed.fields.length == 0) {
 
             const departuresMessage = {content: 'Departures:', embeds: [departuresEmbed]}
     
             return departuresMessage
         }
 
-        disruptionsEmbed.addField('Potential Disruptions', disruptions)
+        if (disruptions != '') {
+            disruptionsEmbed.addField('Potential Disruptions', disruptions)
+        }
 
         const departuresMessage = {content: 'Departures:', embeds: [departuresEmbed, disruptionsEmbed]}
 
