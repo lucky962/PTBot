@@ -161,6 +161,32 @@ Flags:${flags}`
             disruptionsEmbed.addField('Potential Disruptions', disruptions)
         }
 
+        if (departuresEmbed.length + disruptionsEmbed.length > 6000) {
+            var disruptions = '';
+            
+            var disruptionsEmbed = new MessageEmbed()
+                .setTitle('Potential Disruptions')
+                .setColor(this.PTColours[route_type])
+                .setDescription('Potential Disruptions that might affect ' + departure_results['stops'][stop_id]['stop_name'])
+                .setAuthor('VPT Bot', avatar_url)
+                .setThumbnail('https://raw.githubusercontent.com/lucky962/PTBot/main/src/Icons/' + this.RouteTypeTranslate[route_type][0] + '.png')
+                .setFooter('Source: Licensed from Public Transport Victoria under a Creative Commons Attribution 4.0 International Licence.', avatar_url)
+    
+            for (var disruption in departure_results['disruptions']) {
+                if (disruptions.length + `${departure_results['disruptions'][disruption]['title']}\n`.length <= 1024) {
+                    disruptions += `${departure_results['disruptions'][disruption]['title']}\n`
+                } else {
+                    disruptionsEmbed.addField('Potential Disruptions', disruptions);
+                    disruptions = '';
+                }
+            }
+
+        }
+
+        if (disruptions != '') {
+            disruptionsEmbed.addField('Potential Disruptions', disruptions)
+        }
+
         const departuresMessage = {content: 'Departures:', embeds: [departuresEmbed, disruptionsEmbed]}
 
         return departuresMessage
