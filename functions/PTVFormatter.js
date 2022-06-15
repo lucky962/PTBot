@@ -107,6 +107,7 @@ Train Types are sourced from ptv however seem to be quite inaccurate in some cas
         
         for (var direction in departures) {
             var direction_text = '';
+            var noofdepartures = 0;
             for (var departure of departures[direction]) {
                 var flags = '';
                 if (departure['flags'].includes('S_WCA')) {
@@ -125,6 +126,10 @@ Plat: ${departure['platform_number']}. ${(departure_results['runs'][departure['r
 Scheduled: <t:${(new Date(departure['scheduled_departure_utc'])).getTime() / 1000}:${((new Date(departure['scheduled_departure_utc'])).toDateString() == (new Date()).toDateString()) ? 't' : 'f'}>
 ETA: ${(departure['estimated_departure_utc']) ? ('<t:' + (new Date(departure['estimated_departure_utc'])).getTime() / 1000 + ':R>') : 'None'}
 Flags:${flags}`
+                noofdepartures += 1;
+                if (noofdepartures > 2) {
+                    break;
+                }
             }
             departuresEmbed.addField(departure_results['directions'][direction]['direction_name'], direction_text, true)
         }
