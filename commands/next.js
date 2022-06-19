@@ -1,9 +1,10 @@
 const { SlashCommandBuilder } = require('@discordjs/builders');
 const devId = process.env.PTV_DEV_ID;
 const apiKey = process.env.PTV_DEV_KEY;
+const tfnswApiKey = process.env.TFNSW_API_KEY;
 const ptvFormatter = require('../functions/PTVFormatter');
 
-let ptv = new ptvFormatter(devId, apiKey);
+let ptv = new ptvFormatter(devId, apiKey, tfnswApiKey);
 
 module.exports = {
 	data: new SlashCommandBuilder()
@@ -36,7 +37,7 @@ module.exports = {
 	async updateDepartures(interaction) {
 		await interaction.deferUpdate();
 		
-		departures = await ptv.stopToDeparturesEmbed(interaction.values[0].substring(1), interaction.values[0][0])
+		departures = await ptv.stopToDeparturesEmbed(interaction.values[0].substring(4), interaction.values[0][3])
 
 		await interaction.editReply(departures)
 	}

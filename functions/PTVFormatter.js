@@ -1,18 +1,27 @@
 const { MessageActionRow, MessageSelectMenu, MessageEmbed, DiscordAPIError, MessageAttachment } = require('discord.js');
 const ptvApi = require('../functions/PTVApi');
+const tfnswApi = require('../functions/TfNSWApi');
 
 const fs = require('fs');
 
 const avatar_url = 'https://cdn.discordapp.com/avatars/503096810961764364/f89dad593aa8635ccddd3d364ad9c46a.png'
 
 class ptvFormatter{
-    emojiRoute = [
+    ptvEmojiRoute = [
         {name: "Metro", id: "771920140207259659"},
         {name: "Tram", id: "771921271998382140"},
         {name: "Bus", id: "771921102335246346"},
         {name: "VLine", id: "771920567959683102"},
         {name: "Bus", id: "771921102335246346"}
     ]
+
+    tfnswEmojiRoute = {
+        1: {name: "TfNSW_T", id: "988139276275449967"},
+        2: {name: "TfNSW_M", id: "988144694892568607"},
+        4: {name: "TfNSW_L", id: "988139544245329971"},
+        5: {name: "TfNSW_B", id: "988139592291057684"},
+        9: {name: "TfNSW_F", id: "988139631075799040"}
+    }
 
     PTColours = [
         "#0072ce",
@@ -43,25 +52,38 @@ class ptvFormatter{
         ["Bus", "Busses"]
     ]
 
-    constructor(devId, apiKey) {
-        this.ptvClient = new ptvApi(devId, apiKey);
+    constructor(ptvDevId, ptvApiKey, tfnswApiKey) {
+        this.ptvClient = new ptvApi(ptvDevId, ptvApiKey);
+        this.tfnswClient = new tfnswApi(tfnswApiKey)
     }
 
     async searchToMenu(search_term, route_types) {
         
-        const search_results = await this.ptvClient.searchForStop(search_term, route_types)
+        const ptv_search_results = await this.ptvClient.searchForStop(search_term, route_types)
+        const tfnsw_search_results = await this.tfnswClient.searchForStop(search_term)
 
         var stops = []
-        var stop_ids = []
 
-        for (var i = 0; i < Math.min(search_results['stops'].length,25); i++) {
-            stop_ids.push
+        for (var i = 0; i < Math.min(ptv_search_results['stops'].length, 13); i++) {
             stops.push({
-                label: search_results['stops'][i]['stop_name'],
-                description: search_results['stops'][i]['stop_suburb'],
-                value: String(search_results['stops'][i]['route_type']) + String(search_results['stops'][i]['stop_id']), // Concatonates route type with stop id to prevent error occuring with two stops of the same id (different route types)
-                emoji: this.emojiRoute[search_results['stops'][i]['route_type']]
+                label: ptv_search_results['stops'][i]['stop_name'],
+                description: ptv_search_results['stops'][i]['stop_suburb'],
+                value: "VIC" + String(ptv_search_results['stops'][i]['route_type']) + String(ptv_search_results['stops'][i]['stop_id']), // Concatonates route type with stop id to prevent error occuring with two stops of the same id (different route types)
+                emoji: this.ptvEmojiRoute[ptv_search_results['stops'][i]['route_type']]
             })
+        }
+
+        for (var i = 0; i < Math.min(tfnsw_search_results['locations'].length, 12); i++) {
+            console.log(tfnsw_search_results['locations'][i])
+            for (var mode of tfnsw_search_results['locations'][i]['modes']) {
+                if (mode == 11) {continue;}
+                stops.push({
+                    label: tfnsw_search_results['locations'][i]['disassembledName'],
+                    description: tfnsw_search_results['locations'][i]['parent']['name'],
+                    value: "NSW" + String(mode) + tfnsw_search_results['locations'][i]['id'],
+                    emoji: this.tfnswEmojiRoute[mode]
+                })
+            }
         }
 
         const menu = new MessageActionRow()

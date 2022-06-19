@@ -3,16 +3,18 @@ require('dotenv').config()
 const fs = require('fs');
 const { Permissions, Client, Collection, Intents, MessageEmbed } = require('discord.js');
 const ptvFormatter = require('./functions/PTVFormatter');
+const tfnswFormatter = require('./functions/TfNSWFormatter')
 const next = require('./commands/next');
 const token = process.env.VPTBOT;
-const devId = process.env.PTV_DEV_ID;
-const apiKey = process.env.PTV_DEV_KEY;
+const ptvDevId = process.env.PTV_DEV_ID;
+const ptvApiKey = process.env.PTV_DEV_KEY;
+const tfnswApiKey = process.env.TFNSW_API_KEY;
 const pg = require('pg');
 const connectionString = process.env.DATABASE_URL
 const avatar_url = 'https://cdn.discordapp.com/avatars/503096810961764364/f89dad593aa8635ccddd3d364ad9c46a.png';
 
 const client = new Client({ intents: [Intents.FLAGS.GUILDS, Intents.FLAGS.GUILD_MESSAGES] });
-let ptv = new ptvFormatter(devId, apiKey);
+let ptv = new ptvFormatter(ptvDevId, ptvApiKey, tfnswApiKey);
 
 client.commands = new Collection();
 const commandFiles = fs.readdirSync('./commands').filter(file => file.endsWith('.js'));
