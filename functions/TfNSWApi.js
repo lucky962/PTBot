@@ -30,6 +30,13 @@ class tfnswClient {
         const searchResponse = await this.makeAPIRequestAsync(method)
         return searchResponse
     }
+
+    async getDepartures(stop_id, route_type) {
+        const method = `/v1/tp/departure_mon?outputFormat=rapidJSON&coordOutputFormat=EPSG%3A4326&mode=direct&type_dm=stop&name_dm=${stop_id}&departureMonitorMacro=true&excludedMeans=checkbox${(route_type == 1)?'':'&exclMOT_1=1'}${(route_type == 2)?'':'&exclMOT_2=1'}${(route_type == 4)?'':'&exclMOT_4=1'}${(route_type == 5)?'':'&exclMOT_5=1'}${(route_type == 7)?'':'&exclMOT_7=1'}${(route_type == 9)?'':'&exclMOT_9=1'}&exclMOT_11=1&TfNSWDM=true&version=10.2.1.42`
+
+        const searchResponse = await this.makeAPIRequestAsync(method)
+        return searchResponse
+    }
 }
 
 module.exports = tfnswClient;
