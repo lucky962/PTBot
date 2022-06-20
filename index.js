@@ -9,11 +9,13 @@ const token = process.env.VPTBOT;
 const ptvDevId = process.env.PTV_DEV_ID;
 const ptvApiKey = process.env.PTV_DEV_KEY;
 const tfnswApiKey = process.env.TFNSW_API_KEY;
+const topggToken = process.env.TOPGG_TOKEN;
 const pg = require('pg');
 const connectionString = process.env.DATABASE_URL
 const avatar_url = 'https://cdn.discordapp.com/avatars/503096810961764364/f89dad593aa8635ccddd3d364ad9c46a.png';
 
 const client = new Client({ intents: [Intents.FLAGS.GUILDS, Intents.FLAGS.GUILD_MESSAGES] });
+const poster = AutoPoster(topggToken, client);
 let ptv = new ptvFormatter(ptvDevId, ptvApiKey, tfnswApiKey);
 
 client.commands = new Collection();
