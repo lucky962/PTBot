@@ -4,7 +4,6 @@ const fs = require('fs');
 const { Permissions, Client, Collection, Intents, MessageEmbed } = require('discord.js');
 const { AutoPoster } = require('topgg-autoposter')
 const ptvFormatter = require('./functions/PTVFormatter');
-const tfnswFormatter = require('./functions/TfNSWFormatter')
 const next = require('./commands/next');
 const token = process.env.VPTBOT;
 const ptvDevId = process.env.PTV_DEV_ID;
