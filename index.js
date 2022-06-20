@@ -49,6 +49,7 @@ client.once('ready', async () => {
 	}
 	console.log('Ready!');
 	while (true) {
+		client.user.setPresence({activities: [{ name: `Trains with ${client.guilds.cache.size} servers.`, type: 'WATCHING'}]})
 		const pgclient = new pg.Client({
 			connectionString: connectionString,
 			ssl: {
@@ -117,7 +118,9 @@ client.once('ready', async () => {
         })
 
 		// await channel.send('test')
-		await delay(60000)
+		await delay(30000)
+		client.user.setPresence({activities: [{ name: `Now with NSW support!`, type: 'WATCHING'}]})
+		await delay(30000)
 	}
 });
 
