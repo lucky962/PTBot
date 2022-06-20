@@ -1,11 +1,12 @@
 {
   "engines": {
-    "node": "17.x"
+    "node": "18.x"
   },
   "dependencies": {
     "@discordjs/rest": "^0.1.0-canary.0",
     "discord.js": "^13.3.1",
     "dotenv": "^14.1.0",
-    "pg": "^8.7.1"
+    "pg": "^8.7.1",
+    "topgg-autoposter": "^2.0.1"
   }
 }
